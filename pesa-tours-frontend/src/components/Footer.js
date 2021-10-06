@@ -30,8 +30,8 @@ function Footer() {
             </li>
           </ul>
           <ul className="flex flex-col space-y-8">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
+            <li><a target="_blank" href="https://www.facebook.com/Pe%C5%A1a-Tours-108995224601795">Facebook</a></li>
+            <li><a target="_blank" href="https://www.instagram.com/pesatours/">Instagram</a></li>
           </ul>
         </div>
         <span className="h-px bg-ocean w-full block my-8"></span>

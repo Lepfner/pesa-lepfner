@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 import Footer from "../components/Footer";
 
+
 function Destination() {
   return (
     <>

@@ -35,9 +35,11 @@ function Home() {
             Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
           </p>
           <div>
+            <Link to="/destinations">
             <button className="bg-ocean text-white px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
               Check our destinations
             </button>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col justify-center overflow-x-hidden w-1/2 mx-auto">
