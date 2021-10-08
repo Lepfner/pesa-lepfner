@@ -1,6 +1,5 @@
 import React from "react";
 import MetaTags from "react-meta-tags";
-import { Link } from "react-router-dom";
 import aboutImg from "../assets/about-home.jpg";
 
 function About() {
@@ -19,6 +18,7 @@ function About() {
       <section className="flex mt-8 px-24 my-12">
         <img
           src={aboutImg}
+          alt=""
           className="w-1/2 pr-24 h-auto mx-auto flex self-center"
         />
         <div className="w-1/2 flex flex-col justify-center">

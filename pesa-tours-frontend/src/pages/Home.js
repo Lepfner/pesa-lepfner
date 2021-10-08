@@ -60,31 +60,31 @@ function Home() {
               className="destinationSlider overflow-x-hidden"
             >
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="" />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -95,6 +95,7 @@ function Home() {
         <img
           src={aboutImg}
           className="w-1/3 h-auto mx-auto flex self-center transform rotate-12 -mt-32 pr-12"
+          alt=""
         />
         <div className="w-1/2 flex flex-col justify-center">
           <h2 className="uppercase text-ocean text-3xl font-light mb-4">

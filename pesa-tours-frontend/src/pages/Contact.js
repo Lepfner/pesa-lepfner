@@ -1,9 +1,8 @@
 import React from "react";
 
 import MetaTags from "react-meta-tags";
-import { Link } from "react-router-dom";
 
-function Contact({propValue}) {
+function Contact() {
   return (
     <>
       {/* Hero section with meta tags */}
