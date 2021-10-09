@@ -1,8 +1,17 @@
 import React from "react";
-
+import Select from 'react-select';
 import MetaTags from "react-meta-tags";
 
 function Contact() {
+
+  const options = [
+    { value: 'brac', label: 'Obilazak otoka Brača' },
+    { value: 'spilja', label: 'Modra Špilja' },
+    { value: 'boat', label: 'Cjelodnevni najam broda' },
+    { value: 'hvar', label: 'Hvar & Pakleni otoci' },
+    { value: 'solta', label: 'Kupanje na Šolti i Plava laguna' }
+  ]
+
   return (
     <>
       {/* Hero section with meta tags */}
@@ -33,7 +42,7 @@ function Contact() {
           <label className="block text-gray-700 text-sm font-bold mb-2 ml-3 mt-5" for="destination">
             Destination
           </label>
-          <input autoComplete="on" className="shadow appearance-none border rounded w-2/3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Destination"/>
+          <Select options={options} isSearchable={true} isClearable={true} className="appearance-none shadow rounded w-2/3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" placeholder="Destination"/>
           <label className="block text-gray-700 text-sm font-bold mb-2 ml-3 mt-5" for="message">
             Message
           </label>

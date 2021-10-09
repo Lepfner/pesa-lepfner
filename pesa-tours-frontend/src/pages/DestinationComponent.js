@@ -5,10 +5,11 @@ import Icon from "./Icon";
 function Destination({mapItem}) {
   return (
     <>
-          <div className=" p-5 rounded-md cursor-pointer overflow-hidden transform hover:scale-105 duration-500 mx-auto">
+          <div className="h-96 p-5 rounded-md cursor-pointer overflow-hidden transform hover:scale-105 duration-500 mx-auto">
               <img
                   src={mapItem.picture}
                   alt=""
+                  className="h-full max-h-64 w-full"
               />
               <Icon type={mapItem.type}/>
               <div class="p-4 bg-white">
