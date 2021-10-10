@@ -18,7 +18,7 @@ function DestinationsList() {
         <meta property="og:image" content="path/to/image.jpg" />
       </MetaTags>
       <div className="flex flex-col justify-end w-full min-h-half px-4 md:px-24 py-4 bg-skin">
-        <h1 className="text-ocean text-5xl uppercase font-bold">Destinations</h1>
+        <h1 className="text-ocean text-5xl uppercase font-bold ml-4">Destinations</h1>
       </div>
       <div className="md:px-24 px-8 py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-lightblue">
         {Destinations.map(item => (
