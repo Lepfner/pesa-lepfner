@@ -8,9 +8,11 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact'
 import Destinations from './pages/DestinationsList';
+import Destination from "./pages/DestinationComponent";
 
 import Navbar from './components/Navbar';
 import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <Contact />
+          </Route>
+          <Route path="/destinations/:slug">
+            <Destination />
           </Route>
         </Switch>
         <Footer />

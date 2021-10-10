@@ -22,7 +22,7 @@ function DestinationsList() {
       </div>
       <div className="md:px-24 px-8 py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-lightblue">
         {Destinations.map(item => (
-          <Link to="/contact">
+          <Link to={`/${item.slug}`}>
           <DestinationComponent key={item.id} mapItem={item}/></Link>
         ))}
       </div>
