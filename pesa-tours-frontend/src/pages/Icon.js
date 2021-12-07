@@ -7,7 +7,9 @@ function Icon({type}) {
     if(type === "sea"){
         return <FontAwesomeIcon icon={faShip} color="white" className="h-6 absolute top-8 left-8"/>
     } else {
-        return <FontAwesomeIcon icon={faLandmark} color="white" className="h-6 absolute top-8 left-8"/>
+     return <div className="absolute top-5 left-5 bg-white h-10 w-10 flex justify-center items-center">
+        <FontAwesomeIcon icon={faLandmark}/>
+    </div>
     }
 }
 

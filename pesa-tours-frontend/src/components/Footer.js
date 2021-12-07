@@ -1,5 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import face from "../assets/face.png";
+import insta from "../assets/insta.png";
+import jadrolinija from "../assets/j.png"
+import areo from "../assets/aero.png"
 
 function Footer() {
   return (
@@ -9,34 +12,48 @@ function Footer() {
         title="frame"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d92768.38644546816!2d16.605398!3d43.397677!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134a9d978135cf1f%3A0x7187868186fb2805!2sSupetar%2C%20Hrvatska!5e0!3m2!1shr!2sus!4v1629740861752!5m2!1shr!2sus"
         width={"100%"}
-        height={"800"}
+        height={"400"}
       ></iframe>
       <div className="bg-lightblue text-ocean px-24 py-12">
-        <div className="grid grid-cols-1 md: grid-cols-2 lg:grid-cols-3">
-          <ul className="flex flex-col space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 ">
+          <ul className="flex space-x-8">
             <li>
-              <Link to="/about">
-                <p>About Us</p>
-              </Link>
+              <a href="/">
+                <img className="h-10" src={face} alt="" />
+              </a>
             </li>
             <li>
-              <Link to="/destinations">
-                <p>Destinations</p>
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact">
-                <p>Contact</p>
-              </Link>
+              <a href="/">
+                <img className="h-10" src={insta} alt="" />
+              </a>
             </li>
           </ul>
-          <ul className="flex flex-col space-y-8">
-            <li><a target="_blank" rel="noreferrer" href="https://www.facebook.com/Pe%C5%A1a-Tours-108995224601795">Facebook</a></li>
-            <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/pesatours/">Instagram</a></li>
+          <ul className="flex justify-end space-x-8">
+            {/*   <p>
+              We offer links to
+               <a className="uppercase text-xl italic" href="https://www.jadrolinija.hr/" target="_blank" rel="noreferrer"> Jadrolinija </a> 
+               for regular maritime transport of passengers and cargo, and also links for the airports of 
+               <a className="uppercase text-xl italic" href="http://www.split-airport.hr/index.php?lang=en" target="_blank" rel="noreferrer"> Split </a>and 
+               <a className="uppercase text-xl italic" href="https://www.airport-brac.hr/en/home/" target="_blank" rel="noreferrer"> Brač</a>.
+        </p>    */}
+        <a href="https://www.jadrolinija.hr/" target="_blank" rel="noreferrer"><img className="h-10" src={jadrolinija} alt=""/></a>
+        <a href="https://www.airport-brac.hr/en/home/" target="_blank" rel="noreferrer"> <img className="h-20" src={areo} alt=""/></a>.
+
           </ul>
         </div>
         <span className="h-px bg-ocean w-full block my-8"></span>
-        <div className="flex justify-center text-ocean ">Peša Tours - Design and Development by <a href="https://epic-code.hr" target="_blank" rel="noreferrer" className="font-bold"> &nbsp;Epic Code</a></div>
+        <div className="flex justify-center text-ocean ">
+          Peša Tours - Design and Development by
+          <a
+            href="https://epic-code.hr"
+            target="_blank"
+            rel="noreferrer"
+            className="font-bold"
+          >
+            {" "}
+            &nbsp;Epic Code
+          </a>
+        </div>
       </div>
     </>
   );

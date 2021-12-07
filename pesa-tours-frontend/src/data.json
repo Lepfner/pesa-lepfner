@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "Obilazak otoka Brača",
+        "slug": "brac",
+        "type": "land",
+        "description": "Lorem ipsum dolor sit amet",
+        "isLand": true
+        
+    },
+    {
+        "id": 2,
+        "name": "Modra Špilja",
+        "slug": "spilja",
+        "type": "land",
+        "description": "Lorem ipsum dolor sit amet",
+        "isLand": true
+
+    },
+    {
+        "id": 3,
+        "name": "Cjelodnevni najam broda",
+        "slug": "boat",
+        "type": "land",
+        "description": "Lorem ipsum dolor sit amet",
+        "isLand": true
+    },
+    {
+        "id": 4,
+        "name": "Hvar & Pakleni otoci",
+        "slug": "hvar",
+        "type": "land",
+        "description": "Lorem ipsum dolor sit amet",
+        "isLand": true
+
+    },
+    {
+        "id": 5,
+        "name": "Kupanje na Šolti i Plava laguna",
+        "slug": "solta",
+        "type": "land",
+        "description": "Lorem ipsum dolor sit amet",
+        "isLand": true
+
+    }
+]

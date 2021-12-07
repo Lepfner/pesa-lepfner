@@ -1,12 +1,12 @@
 import React from "react";
 import MetaTags from "react-meta-tags";
-import { Link } from "react-router-dom";
 // Import Swiper React components
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/swiper.min.css";
 import "swiper/components/effect-coverflow/effect-coverflow.min.css";
 import "swiper/components/navigation/navigation.min.css";
+import bus from "../assets/busevi/AM_00777 copy.jpg";
 
 import aboutImg from "../assets/about-home.jpg";
 
@@ -27,140 +27,155 @@ function Home() {
         <meta property="og:image" content="path/to/image.jpg" />
       </MetaTags>
       <div className="main-wrapper flex bg-skin">
+      
+
+        <div className="overflow-x-hidden">
+          <Swiper
+            navigation={true}
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={1}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            className="destinationSlider overflow-x-hidden"
+          >
+            <SwiperSlide>
+            <div className="main-wrapper flex bg-skin w-full">
         <div className="pl-24 pt-12 flex flex-col justify-center w-1/2">
-          <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
-            Experience the best travel in Dalmatia
-          </h1>
-          <p className="text-ocean my-5">
-            Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
-          </p>
-          <div>
-            <Link to="/destinations">
-            <button className="bg-ocean text-white px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
-              Check our destinations
-            </button>
-            </Link>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center overflow-x-hidden w-1/2 mx-auto">
-          <div className="overflow-x-hidden">
-            <Swiper
-              navigation={true}
-              effect={"coverflow"}
-              grabCursor={true}
-              centeredSlides={true}
-              slidesPerView={"auto"}
-              coverflowEffect={{
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-              }}
-              className="destinationSlider overflow-x-hidden"
-            >
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="" />
-              </SwiperSlide>
-            </Swiper>
-          </div>
+              <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
+                Experience the best travel in Dalmatia
+              </h1>
+              <p className="text-ocean my-5">
+                Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
+              </p>
+              <div>
+                <Link to="/about">
+                  <button className="bg-ocean text-white px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                    Check our destinations
+                  </button>
+                </Link>
+              </div>
+              </div>
+              <div className="flex flex-col justify-center overflow-x-hidden w-1/2 mx-auto">
+                <img
+                  src="https://swiperjs.com/demos/images/nature-1.jpg"
+                  alt=""
+                />
+              </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+            <div className="main-wrapper flex bg-skin w-screen h-full">
+        <div className="pl-24 pt-12 flex flex-col justify-center w-1/2">
+              <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
+                Experience the best travel in Dalmatia
+              </h1>
+              <p className="text-ocean my-5">
+                Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
+              </p>
+              <div>
+                <Link to="/about">
+                  <button className="bg-ocean text-white px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                    Check our destinations
+                  </button>
+                </Link>
+              </div>
+              </div>
+              <div className="flex flex-col justify-center overflow-x-hidden w-1/2 mx-auto">
+                <img
+                  className="w-full h-full"
+                  src="https://happytovisit.com/glib/1/Rent-Leut-Boat-Private-Daily-Rent-from-Split-and-Trogir-for-up-to-12-People-1-29462.png"
+                  alt=""
+                />
+              </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+            <div className="main-wrapper flex bg-skin ">
+        <div className="pl-24 pt-12 flex flex-col justify-center w-1/2">
+              <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
+                Experience the best travel in Dalmatia
+              </h1>
+              <p className="text-ocean my-5">
+                Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
+              </p>
+              <div>
+                <Link to="/about">
+                  <button className="bg-ocean text-white px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                    Check our destinations
+                  </button>
+                </Link>
+              </div>
+              </div>
+              <div className="flex flex-col justify-center overflow-x-hidden w-1/2 mx-auto">
+                <img src={bus} alt="" />
+              </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
       {/* About section */}
       <section className="flex mt-8 px-24 my-12">
         <img
           src={aboutImg}
-          className="w-1/3 h-auto mx-auto flex self-center transform rotate-12 -mt-32 pr-12"
+          className="w-1/3 h-auto mx-auto flex self-center transform rotate-12 -mt-96 pr-12"
           alt=""
         />
         <div className="w-1/2 flex flex-col justify-center">
-          <h2 className="uppercase text-ocean text-3xl font-light mb-4">
-            As innovative and young group of people
-          </h2>
-          <h2 className="uppercase text-ocean text-4xl font-semibold mb-12">
-            We are more than tours Destination planning company
-          </h2>
-          <p className="text-ocean mb-8">
-            Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit aliquip
-            nostrud nulla. Adipisicing proident pariatur consectetur sint sunt
-            irure duis qui sit minim. Pariatur laboris tempor quis ullamco ut
-            pariatur veniam sunt pariatur.
-          </p>
-          <Link to="/about">
-            <button className="bg-ocean text-white px-4 py-2 border border-ocean hover:text-ocean hover:bg-white transition duration-500">
-              Find out more
-            </button>
-          </Link>
+          <section className="flex flex-col my-8 px-24">
+            <h2 className="mb-4 text-ocean font-semibold text-5xl mx-auto muppercase">
+              Some of experiences from our guests
+            </h2>
+            <Swiper
+              slidesPerView={1}
+              autoplay={{ delay: 3000 }}
+              className="testimonialsSwiper overflow-x-hidden min-h-half"
+            >
+              <SwiperSlide>
+                <div className="text-ocean w-full px-8">
+                  <p className="text-lg italic w-1/2 mx-auto mt-12">
+                    Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit
+                    aliquip nostrud nulla. Adipisicing proident pariatur
+                    consectetur sint sunt irure duis qui sit minim. Parit
+                    pariatur.
+                  </p>
+                  <p className="flex justify-end">- John Doe</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="text-ocean w-full px-8">
+                  <p className="text-lg italic w-1/2 mx-auto mt-12">
+                    Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit
+                    aliquip nostrud nulla. Adiptur laboris tempor quis ullamco
+                    ut pariatur veniam sunt pariatur.
+                  </p>
+                  <p className="flex justify-end">- John Doe</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="text-ocean w-full px-8">
+                  <p className="text-lg italic w-1/2 mx-auto mt-12">
+                    Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit
+                    aliquip nostrud nulla. Adipisicing proident pariatur
+                    consectetur sint sunt irure duis qui sit minim. Pariatur
+                    laboris tempor quis ullamco ut pariatur veniam sunt
+                    pariatur.
+                  </p>
+                  <p className="flex justify-end">- John Doe</p>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </section>
         </div>
       </section>
       {/* Testimonials */}
-      <section className="flex flex-col my-8 px-24">
-        <h2 className="mb-4 text-ocean font-semibold text-5xl mx-auto mt-24 uppercase">
-          Some of experiences from our guests
-        </h2>
-        <Swiper
-          slidesPerView={1}
-          className="testimonialsSwiper overflow-x-hidden min-h-half"
-        >
-          <SwiperSlide>
-            <div className="text-ocean w-full px-8">
-              <p className="text-lg italic w-1/2 mx-auto mt-12">
-                Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit
-                aliquip nostrud nulla. Adipisicing proident pariatur consectetur
-                sint sunt irure duis qui sit minim. Pariatur laboris tempor quis
-                ullamco ut pariatur veniam sunt pariatur.
-              </p>
-              <p className="flex justify-end">- John Doe</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="text-ocean w-full px-8">
-              <p className="text-lg italic w-1/2 mx-auto mt-12">
-                Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit
-                aliquip nostrud nulla. Adipisicing proident pariatur consectetur
-                sint sunt irure duis qui sit minim. Pariatur laboris tempor quis
-                ullamco ut pariatur veniam sunt pariatur.
-              </p>
-              <p className="flex justify-end">- John Doe</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="text-ocean w-full px-8">
-              <p className="text-lg italic w-1/2 mx-auto mt-12">
-                Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit
-                aliquip nostrud nulla. Adipisicing proident pariatur consectetur
-                sint sunt irure duis qui sit minim. Pariatur laboris tempor quis
-                ullamco ut pariatur veniam sunt pariatur.
-              </p>
-              <p className="flex justify-end">- John Doe</p>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </section>
     </>
   );
 }
