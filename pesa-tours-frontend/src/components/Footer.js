@@ -19,27 +19,23 @@ function Footer() {
           <ul className="flex space-x-8">
             <li>
               <a href="/">
-                <img className="h-10" src={face} alt="" />
+                <img className="h-10 mt-2" src={face} alt="" />
               </a>
             </li>
             <li>
               <a href="/">
-                <img className="h-10" src={insta} alt="" />
+                <img className="h-14" src={insta} alt="" />
               </a>
             </li>
           </ul>
           <ul className="flex justify-end space-x-8">
-            {/*   <p>
-              We offer links to
-               <a className="uppercase text-xl italic" href="https://www.jadrolinija.hr/" target="_blank" rel="noreferrer"> Jadrolinija </a> 
-               for regular maritime transport of passengers and cargo, and also links for the airports of 
-               <a className="uppercase text-xl italic" href="http://www.split-airport.hr/index.php?lang=en" target="_blank" rel="noreferrer"> Split </a>and 
-               <a className="uppercase text-xl italic" href="https://www.airport-brac.hr/en/home/" target="_blank" rel="noreferrer"> Brač</a>.
-        </p>    */}
-        <a href="https://www.jadrolinija.hr/" target="_blank" rel="noreferrer"><img className="h-10" src={jadrolinija} alt=""/></a>
-        <a href="https://www.airport-brac.hr/en/home/" target="_blank" rel="noreferrer"> <img className="h-20" src={areo} alt=""/></a>.
+        <a href="https://www.jadrolinija.hr/" target="_blank" rel="noreferrer"><img className="h-20 mt-2" src={jadrolinija} alt=""/></a>
+        <a href="https://www.airport-brac.hr/en/home/" target="_blank" rel="noreferrer"> <img className="h-40" src={areo} alt=""/></a>.
 
           </ul>
+          <p> </p>
+          <p>
+              We offer links to Jadrolinija for regular maritime transport of passengers and cargo, and also links for the airports of Split and Brač.</p>
         </div>
         <span className="h-px bg-ocean w-full block my-8"></span>
         <div className="flex justify-center text-ocean ">

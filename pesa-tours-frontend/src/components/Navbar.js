@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
+import "../styles.css";
 function Navbar() {
   const [Val, setVal] = useState('about')
   function d(b){
@@ -21,15 +22,15 @@ function Navbar() {
       <h2>Peša tours</h2>
       <ul className="flex space-x-8 text-ocean text-bold items-center">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/"><p class="link">Home</p></Link>
         </li>
         <li>
-          <Link to="/destinations">Destinations</Link>
+          <Link to="/destinations"><p class="link">Destinations</p></Link>
         </li>
         <li>
-          <Link to="/construction-list">Constructions</Link>
+          <Link to="/construction-list"><p class="link">Constructions</p></Link>
         </li>
-        <li>
+        <li class="link">
           <select value={Val}
           className="bg-transparent focus:no-underline" 
           defaultValue={'about'}
@@ -52,7 +53,7 @@ function Navbar() {
           </select>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact"><p class="link">Contact</p></Link>
         </li>
       </ul>
       <Link to="/contact">
