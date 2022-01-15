@@ -3,6 +3,7 @@ import MetaTags from "react-meta-tags";
 // Import Swiper React components
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from 'swiper';
 import "swiper/swiper.min.css";
 import "swiper/components/effect-coverflow/effect-coverflow.min.css";
 import "swiper/components/navigation/navigation.min.css";
@@ -15,6 +16,7 @@ import SwiperCore, { EffectCoverflow, Navigation } from "swiper/core";
 
 // install Swiper modules
 SwiperCore.use([EffectCoverflow, Navigation]);
+SwiperCore.use([Autoplay]);
 
 function Home() {
   return (
@@ -26,11 +28,12 @@ function Home() {
         <meta property="og:title" content="Peša Tours" />
         <meta property="og:image" content="path/to/image.jpg" />
       </MetaTags>
-      <div className="main-wrapper flex bg-skin">
+      <div className="main-wrapper flex bg-lightblue">
       
 
         <div className="overflow-x-hidden">
           <Swiper
+            autoplay={{ delay: 5000 }}
             navigation={true}
             effect={"coverflow"}
             grabCursor={true}
@@ -46,7 +49,7 @@ function Home() {
             className="destinationSlider overflow-x-hidden"
           >
             <SwiperSlide>
-            <div className="main-wrapper flex bg-skin w-full">
+            <div className="main-wrapper flex bg-lightblue w-full">
         <div className="pl-24 pt-12 flex flex-col justify-center w-1/2">
               <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
                 Experience the best travel in Dalmatia
@@ -71,7 +74,7 @@ function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="main-wrapper flex bg-skin w-screen h-full">
+            <div className="main-wrapper flex bg-lightblue w-screen h-full">
         <div className="pl-24 pt-12 flex flex-col justify-center w-1/2">
               <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
                 Experience the best travel in Dalmatia
@@ -97,7 +100,7 @@ function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="main-wrapper flex bg-skin ">
+            <div className="main-wrapper flex bg-lightblue ">
         <div className="pl-24 pt-12 flex flex-col justify-center w-1/2">
               <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
                 Experience the best travel in Dalmatia
@@ -135,7 +138,7 @@ function Home() {
             </h2>
             <Swiper
               slidesPerView={1}
-              autoplay={{ delay: 3000 }}
+              autoplay={{ delay: 5000 }}
               className="testimonialsSwiper overflow-x-hidden min-h-half"
             >
               <SwiperSlide>

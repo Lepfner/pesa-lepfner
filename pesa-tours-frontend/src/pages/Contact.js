@@ -5,6 +5,7 @@ import MetaTags from "react-meta-tags";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faInfo, faAddressBook, faClock } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 function Contact() {
 
@@ -25,7 +26,7 @@ function Contact() {
         <meta property="og:title" content="Peša Tours" />
         <meta property="og:image" content="path/to/image.jpg" />
       </MetaTags>
-      <div className="flex flex-col justify-end w-full min-h-half px-4 md:px-24 py-4 bg-skin">
+      <div className="flex flex-col justify-end w-full min-h-half px-4 md:px-24 py-4 bg-lightblue">
         <h1 className="text-ocean text-5xl uppercase font-bold">Contact us</h1>
       </div>
       <section className="flex mt-8 px-24 my-16">
@@ -62,6 +63,12 @@ function Contact() {
         <FontAwesomeIcon icon={faPhone} className="h-4"/>
         <a href="tel:+385911378939" className="text-ocean mb-8 ml-4 inline text-xl">
           Phone: Luka Bakija +385 91 137 8939
+        </a>
+        </div><br/>
+        <div className="inline-block">
+        <FontAwesomeIcon icon={faWhatsapp} size="2x" className="h-6 pr-2"/>
+        <a href="tel:+385911378939" className="text-ocean mb-8 inline text-xl">
+          WhatsApp: Luka Bakija +385 91 137 8939
         </a>
         </div><br/>
         <div className="inline-block">

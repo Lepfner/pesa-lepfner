@@ -14,7 +14,7 @@ function Destinations() {
             {Data.filter(name => name.slug === `${path}`).map(filteredName => (
             
                 <div>
-                    <div className="flex flex-col justify-end w-full min-h-half px-4 md:px-24 py-4 bg-skin">
+                    <div className="flex flex-col justify-end w-full min-h-half px-4 md:px-24 py-4 bg-lightblue">
                         <h1 className="text-ocean text-5xl uppercase font-bold">{filteredName.name}</h1>
                     </div>
                     <section className="flex mt-8 px-24 my-12">
