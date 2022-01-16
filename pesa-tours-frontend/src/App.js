@@ -16,8 +16,9 @@ import Destination from "./pages/Destination";
 
 function App() {
   return (
+    <div className="overflow-x-hidden w-full">
     <Router>
-      <div className="overflow-x-hidden">
+
         <Navbar />
         <Switch>
           <Route exact path="/about">
@@ -40,8 +41,9 @@ function App() {
           </Route>
         </Switch>
         <Footer />
-      </div>
+
     </Router>
+    </div>
   );
 }
 
