@@ -18,8 +18,35 @@
     left: 0;
     background: #064273;
   }
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 768px){
 html, body{
-  width: 101vh;
+  width: 108vh;
+}
+#navbar{
+  width: 108vh;
 }
 }
+@media only screen and (max-height: 768px){
+  html, body{
+    width: 126vh;
+  }
+  #navbar{
+    width: 126vh;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1030px){
+  html, body{
+    width: 170.5vh;
+  }
+  #navbar{
+    width: 170.5vh;
+  }
+}
+@media only screen and (max-height: 700px){
+  html, body{
+    width: 129.5vh;
+  }
+  #navbar{
+    width: 129.5vh;
+  }
+  }

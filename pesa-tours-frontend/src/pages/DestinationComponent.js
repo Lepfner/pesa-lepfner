@@ -12,11 +12,11 @@ function Destination({ mapItem }) {
 
   return (
     <>
-      <div className="h-96 p-5 rounded-md cursor-pointer overflow-hidden transform hover:scale-105 duration-500 mx-auto">
+      <div className="p-5 rounded-md cursor-pointer overflow-hidden transform hover:scale-105 duration-500 mx-auto">
         <img
           src={mapItem.isLand ? busevi[mapItem.id - 1] : mapItem.picture}
           alt=""
-          className="h-full max-h-64 w-full"
+          className="h-96 max-h-96 w-full"
         />
         <Icon type={mapItem.type} />
         <div class="p-4 pb-8 bg-white">
@@ -31,7 +31,7 @@ function Destination({ mapItem }) {
             }}
             className="text-ocean"
           >
-            {mapItem.description}
+          <p className="text-xl">{mapItem.description}</p>
           </p>
         </div>
       </div>

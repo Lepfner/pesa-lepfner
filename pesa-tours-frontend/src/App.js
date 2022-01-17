@@ -18,7 +18,6 @@ function App() {
   return (
     <div className="overflow-x-hidden w-full">
     <Router>
-
         <Navbar />
         <Switch>
           <Route exact path="/about">
@@ -41,7 +40,6 @@ function App() {
           </Route>
         </Switch>
         <Footer />
-
     </Router>
     </div>
   );

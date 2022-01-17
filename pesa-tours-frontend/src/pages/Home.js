@@ -7,7 +7,6 @@ import { Autoplay } from 'swiper';
 import "swiper/swiper.min.css";
 import "swiper/components/effect-coverflow/effect-coverflow.min.css";
 import "swiper/components/navigation/navigation.min.css";
-import bus from "../assets/busevi/AM_00777 copy.jpg";
 
 import aboutImg from "../assets/about-home.jpg";
 
@@ -31,7 +30,7 @@ function Home() {
       <div className="main-wrapper flex bg-lightblue">
       
 
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden mt-24 sm:mt-0">
           <Swiper
             autoplay={{ delay: 5000 }}
             navigation={true}
@@ -46,20 +45,20 @@ function Home() {
               modifier: 1,
               slideShadows: true,
             }}
-            className="destinationSlider overflow-x-hidden"
+            className="destinationSlider overflow-x-hidden z-50"
           >
             <SwiperSlide>
-            <div className="main-wrapper flex bg-lightblue w-full">
+            <div className="main-wrapper flex bg-lightblue w-full z-50">
         <div className="pl-24 pt-12 flex flex-col justify-center w-1/2">
-              <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
+              <h1 className="text-ocean text-4xl sm:text-6xl font-bold lg:w-1/2 uppercase">
                 Experience the best travel in Dalmatia
               </h1>
-              <p className="text-ocean my-5">
+              <p className="text-ocean text-2xl sm:text-md my-5">
                 Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
               </p>
               <div>
                 <Link to="/about">
-                  <button className="bg-ocean text-white px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                  <button className="bg-ocean text-white text-2xl sm:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
                     Check our destinations
                   </button>
                 </Link>
@@ -74,17 +73,17 @@ function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="main-wrapper flex bg-lightblue w-screen h-full">
+            <div className="main-wrapper flex bg-lightblue w-full z-50">
         <div className="pl-24 pt-12 flex flex-col justify-center w-1/2">
-              <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
+              <h1 className="text-ocean text-4xl sm:text-6xl font-bold lg:w-1/2 uppercase">
                 Experience the best travel in Dalmatia
               </h1>
-              <p className="text-ocean my-5">
+              <p className="text-ocean text-2xl sm:text-md my-5">
                 Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
               </p>
               <div>
                 <Link to="/about">
-                  <button className="bg-ocean text-white px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                  <button className="bg-ocean text-white text-2xl sm:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
                     Check our destinations
                   </button>
                 </Link>
@@ -92,32 +91,34 @@ function Home() {
               </div>
               <div className="flex flex-col justify-center overflow-x-hidden w-1/2 mx-auto">
                 <img
-                  className="w-full h-full"
-                  src="https://happytovisit.com/glib/1/Rent-Leut-Boat-Private-Daily-Rent-from-Split-and-Trogir-for-up-to-12-People-1-29462.png"
+                  src="https://swiperjs.com/demos/images/nature-1.jpg"
                   alt=""
                 />
               </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="main-wrapper flex bg-lightblue ">
+            <div className="main-wrapper flex bg-lightblue w-full z-50">
         <div className="pl-24 pt-12 flex flex-col justify-center w-1/2">
-              <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
+              <h1 className="text-ocean text-4xl sm:text-6xl font-bold lg:w-1/2 uppercase">
                 Experience the best travel in Dalmatia
               </h1>
-              <p className="text-ocean my-5">
+              <p className="text-ocean text-2xl sm:text-md my-5">
                 Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
               </p>
               <div>
                 <Link to="/about">
-                  <button className="bg-ocean text-white px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                  <button className="bg-ocean text-white text-2xl sm:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
                     Check our destinations
                   </button>
                 </Link>
               </div>
               </div>
               <div className="flex flex-col justify-center overflow-x-hidden w-1/2 mx-auto">
-                <img src={bus} alt="" />
+                <img
+                  src="https://swiperjs.com/demos/images/nature-1.jpg"
+                  alt=""
+                />
               </div>
               </div>
             </SwiperSlide>
@@ -128,7 +129,7 @@ function Home() {
       <section className="flex mt-8 px-24 my-12">
         <img
           src={aboutImg}
-          className="w-1/3 h-auto mx-auto flex self-center transform rotate-12 -mt-96 pr-12"
+          className="w-4/5 sm:w-1/3 sm:h-auto mx-auto flex self-center transform rotate-12 z-0 -mt-96 pr-12"
           alt=""
         />
         <div className="w-1/2 flex flex-col justify-center">

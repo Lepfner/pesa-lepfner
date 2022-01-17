@@ -28,16 +28,16 @@ function Footer() {
               </a>
             </li>
             <li>
-              <p>We offer links to Jadrolinija for regular maritime transport of passengers and cargo, and also links for the airports of Split and Brač.</p>
+              <p className="text-2xl md:text-sm sm:text-md">We offer links to Jadrolinija for regular maritime transport of passengers and cargo, and also links for the airports of Split and Brač.</p>
             </li>
           </ul>
-          <ul className="flex justify-end space-x-8">
+          <ul className="flex mt-16 sm:mt-0 justify-evenly sm:justify-end space-x-8">
             <a href="https://www.jadrolinija.hr/" target="_blank" rel="noreferrer"><img className="h-20 mt-2" src={jadrolinija} alt="" /></a>
-            <a href="https://www.airport-brac.hr/en/home/" target="_blank" rel="noreferrer"> <img className="h-40" src={areo} alt="" /></a>.
+            <a href="https://www.airport-brac.hr/en/home/" target="_blank" rel="noreferrer"> <img className="h-40" src={areo} alt="" /></a>
           </ul>
         </div>
         <span className="h-px bg-ocean w-full block my-8"></span>
-        <div className="flex justify-center text-ocean ">
+        <div className="flex justify-center text-ocean text-2xl md:text-sm sm:text-sm">
           Peša Tours - Design and Development by
           <a
             href="https://epic-code.hr"
