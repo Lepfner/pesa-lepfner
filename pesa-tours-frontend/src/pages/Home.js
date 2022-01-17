@@ -126,7 +126,7 @@ function Home() {
         </div>
       </div>
       {/* About section */}
-      <section className="flex mt-8 px-24 my-12">
+      <section className="grid-cols-1 mt-96 sm:mt-0 sm:flex mt-8 px-24 my-12">
         <img
           src={aboutImg}
           className="w-4/5 sm:w-1/3 sm:h-auto mx-auto flex self-center transform rotate-12 z-0 -mt-96 pr-12"
@@ -140,7 +140,7 @@ function Home() {
             <Swiper
               slidesPerView={1}
               autoplay={{ delay: 5000 }}
-              className="testimonialsSwiper overflow-x-hidden min-h-half"
+              className="testimonialsSwiper overflow-x-hidden min-h-half mr-20 sm:mr-0"
             >
               <SwiperSlide>
                 <div className="text-ocean w-full px-8">
