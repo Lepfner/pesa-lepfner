@@ -47,11 +47,11 @@ function Home() {
               modifier: 1,
               slideShadows: true,
             }}
-            className="destinationSlider overflow-x-hidden z-50"
+            className="destinationSlider overflow-x-hidden z-30"
           >
             <SwiperSlide>
             <div className="main-wrapper flex bg-lightblue w-full z-50">
-        <div className="pl-24 pt-12 flex flex-col justify-center w-1/2">
+        <div className="pl-4 sm:pl-24 pt-12 flex flex-col justify-center w-1/2">
               <h1 className="text-ocean text-4xl sm:text-6xl font-bold lg:w-1/2 uppercase">
                 Experience the best travel in Dalmatia
               </h1>
