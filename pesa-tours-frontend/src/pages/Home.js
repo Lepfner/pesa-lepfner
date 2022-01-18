@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper';
 import "swiper/swiper.min.css";
+import slider1 from "../assets/busevi/AM_00777 copy.jpg"
+import vidslider2 from "../assets/AM_00851 copy.jpg"
 import "swiper/components/effect-coverflow/effect-coverflow.min.css";
 import "swiper/components/navigation/navigation.min.css";
 
@@ -66,7 +68,7 @@ function Home() {
               </div>
               <div className="flex flex-col justify-center overflow-x-hidden w-1/2 mx-auto">
                 <img
-                  src="https://swiperjs.com/demos/images/nature-1.jpg"
+                  src={slider1}
                   alt=""
                 />
               </div>
@@ -91,7 +93,7 @@ function Home() {
               </div>
               <div className="flex flex-col justify-center overflow-x-hidden w-1/2 mx-auto">
                 <img
-                  src="https://swiperjs.com/demos/images/nature-1.jpg"
+                  src={vidslider2}
                   alt=""
                 />
               </div>
