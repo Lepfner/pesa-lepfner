@@ -51,11 +51,11 @@ function Home() {
           >
             <SwiperSlide>
             <div className="main-wrapper flex flex-col xl:flex-row bg-lightblue w-full z-50">
-                <div className="px-20 xl:px-0 xl:pl-24 pt-12 flex flex-col justify-center w-full xl:w-1/2">
+                <div className="px-20 xl:px-0 pb-10 xl:pl-24 pt-12 flex flex-col justify-center w-full xl:w-1/2">
                   <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
                     Experience the best travel in Dalmatia
                   </h1>
-                  <p className="text-ocean text-4xl xl:text-md my-5">
+                  <p className="text-ocean text-4xl pr-10 xl:text-md my-5">
                     Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
                   </p>
                   <div>
@@ -76,11 +76,11 @@ function Home() {
             </SwiperSlide>
             <SwiperSlide>
             <div className="main-wrapper flex flex-col xl:flex-row bg-lightblue w-full z-50">
-                <div className="px-20 xl:px-0 xl:pl-24 pt-12 flex flex-col justify-center w-full xl:w-1/2">
+                <div className="px-20 xl:px-0 pb-10 xl:pl-24 pt-12 flex flex-col justify-center w-full xl:w-1/2">
                   <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
                     Experience the best travel in Dalmatia
                   </h1>
-                  <p className="text-ocean text-4xl xl:text-md my-5">
+                  <p className="text-ocean text-4xl pr-10 xl:text-md my-5">
                     Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
                   </p>
                   <div>
@@ -101,11 +101,11 @@ function Home() {
             </SwiperSlide>
             <SwiperSlide>
             <div className="main-wrapper flex flex-col xl:flex-row bg-lightblue w-full z-50">
-                <div className="px-20 xl:px-0 xl:pl-24 pt-12 flex flex-col justify-center w-full xl:w-1/2">
+                <div className="px-20 xl:px-0 pb-10 xl:pl-24 pt-12 flex flex-col justify-center w-full xl:w-1/2">
                   <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
                     Experience the best travel in Dalmatia
                   </h1>
-                  <p className="text-ocean text-4xl xl:text-md my-5">
+                  <p className="text-ocean text-4xl pr-10 xl:text-md my-5">
                     Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
                   </p>
                   <div>
@@ -128,26 +128,26 @@ function Home() {
         </div>
       </div>
       {/* About section */}
-      <section className="grid-cols-1 mt-96 sm:mt-0 sm:flex mt-8 px-24 my-12">
+      <section className="grid-cols-1 mt-96 sm:mt-0 sm:flex mt-8 px-24">
         <img
           src={aboutImg}
           className="w-4/5 sm:w-1/3 sm:h-auto mx-auto flex self-center transform rotate-12 -mt-48 sm:-mt-0 z-0 pr-12"
           alt=""
         />
         <div className="w-full mt-10 sm:mt-0 sm:w-1/2 flex flex-row sm:flex-col justify-center">
-          <section className="flex flex-col my-8 px-24">
-            <h2 className="mb-4 text-ocean font-semibold text-5xl mx-auto uppercase">
+          <section className="flex flex-col my-8 px-0 overflow-x-hidden">
+            <h2 className="text-ocean font-semibold text-4xl mx-auto uppercase">
               Some experiences from our guests
             </h2>
             <Swiper
               slidesPerView={1}
               autoplay={{ delay: 5000 }}
-              navigation={true}
+              navigation={false}
               className="testimonialsSwiper overflow-x-hidden min-h-half"
             >
               <SwiperSlide>
                 <div className="text-ocean w-full px-8">
-                  <p className="text-lg italic w-1/2 mx-auto mt-12">
+                  <p className="text-lg italic w-full mx-auto mt-12">
                     Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit
                     aliquip nostrud nulla. Adipisicing proident pariatur
                     consectetur sint sunt irure duis qui sit minim. Parit
@@ -158,7 +158,7 @@ function Home() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="text-ocean w-full px-8">
-                  <p className="text-lg italic w-1/2 mx-auto mt-12">
+                  <p className="text-lg italic w-full mx-auto mt-12">
                     Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit
                     aliquip nostrud nulla. Adiptur laboris tempor quis ullamco
                     ut pariatur veniam sunt pariatur.
@@ -168,7 +168,7 @@ function Home() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="text-ocean w-full px-8">
-                  <p className="text-lg italic w-1/2 mx-auto mt-12">
+                  <p className="text-lg italic w-full mx-auto mt-12">
                     Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit
                     aliquip nostrud nulla. Adipisicing proident pariatur
                     consectetur sint sunt irure duis qui sit minim. Pariatur
