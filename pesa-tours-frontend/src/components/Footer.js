@@ -40,16 +40,6 @@ function Footer() {
           </div>
         <span className="h-px bg-ocean w-full block my-8"></span>
         <div className="flex justify-center text-ocean text-2xl md:text-sm sm:text-sm">
-          Peša Tours - Design and Development by
-          <a
-            href="https://epic-code.hr"
-            target="_blank"
-            rel="noreferrer"
-            className="font-bold"
-          >
-            {" "}
-            &nbsp;Epic Code
-          </a>
         </div>
       </div>
     </>

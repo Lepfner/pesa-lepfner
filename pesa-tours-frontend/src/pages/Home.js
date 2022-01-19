@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper';
 import "swiper/swiper.min.css";
 import slider1 from "../assets/busevi/AM_00777 copy.jpg"
+import slider3 from "../assets/AM_00782 copy.jpg"
 import vidslider2 from "../assets/AM_00851 copy.jpg"
 import "swiper/components/effect-coverflow/effect-coverflow.min.css";
 import "swiper/components/navigation/navigation.min.css";
@@ -118,7 +119,7 @@ function Home() {
                 </div>
               <div className="flex flex-col justify-center overflow-x-hidden w-5/6 xl:w-1/2 mx-auto">
                 <img
-                  src={slider1}
+                  src={slider3}
                   alt=""
                 />
               </div>

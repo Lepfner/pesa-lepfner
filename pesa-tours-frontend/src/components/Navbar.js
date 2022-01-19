@@ -21,7 +21,7 @@ function Navbar() {
   return (
     <>
     <nav id="navbar" className="flex justify-between text-lg sm:text-md h-24 sm:h-20 py-4 px-24 bg-black w-full bg-opacity-60 absolute top-0 left-0 right-0 items-center z-40">
-      <h2 className="w-full sm:w-auto">PEŠA TOURS</h2>
+      <h2 className="w-full text-white sm:w-auto">PEŠA TOURS</h2>
       <ul className="sm:flex hidden space-x-8 text-white text-bold items-center">
         <li>
           <Link to="/"><p class="link">HOME</p></Link>
