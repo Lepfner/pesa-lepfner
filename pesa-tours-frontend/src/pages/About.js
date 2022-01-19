@@ -13,22 +13,22 @@ function About() {
         <meta property="og:image" content="path/to/image.jpg" />
       </MetaTags>
       <div className="flex flex-col justify-end w-full min-h-half px-4 md:px-24 py-4 bg-lightblue">
-        <h1 className="text-ocean text-5xl uppercase font-bold ml-20 sm:ml-0">About us</h1>
+        <h1 className="text-ocean text-5xl uppercase font-bold ml-20 xl:ml-0">About us</h1>
       </div>
-      <section className="flex mt-8 px-24 my-12">
+      <section className="flex flex-col xl:flex-row mt-8 px-24 my-12">
         <img
           src={aboutImg}
           alt=""
-          className="w-1/2 pr-24 h-auto mx-auto flex self-center"
+          className="w-full xl:w-1/2 xl:pr-24 h-auto mx-auto flex self-center"
         />
-        <div className="w-1/2 flex flex-col justify-center">
+        <div className="w-full mt-10 xl:mt-0 xl:w-1/2 flex flex-col justify-center">
           <h2 className="uppercase text-ocean text-3xl font-light mb-4">
             As innovative and young group of people
           </h2>
           <h2 className="uppercase text-ocean text-4xl font-semibold mb-12">
             We are more than tours Destination planning company
           </h2>
-          <p className="text-ocean text-xl mb-8">
+          <p className="text-ocean text-3xl xl:text-xl mb-8">
             Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit aliquip
             nostrud nulla. Adipisicing proident pariatur consectetur sint sunt
             irure duis qui sit minim. Pariatur laboris tempor quis ullamco ut

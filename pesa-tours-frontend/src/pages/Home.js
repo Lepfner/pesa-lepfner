@@ -47,26 +47,26 @@ function Home() {
               modifier: 1,
               slideShadows: true,
             }}
-            className="destinationSlider overflow-x-hidden z-30"
+            className="destinationSlider xl:mt-24 overflow-x-hidden z-30"
           >
             <SwiperSlide>
-            <div className="main-wrapper flex bg-lightblue w-full z-50">
-        <div className="pl-4 sm:pl-24 pt-12 flex flex-col justify-center w-1/2">
-              <h1 className="text-ocean text-4xl sm:text-6xl font-bold lg:w-1/2 uppercase">
-                Experience the best travel in Dalmatia
-              </h1>
-              <p className="text-ocean text-2xl sm:text-md my-5">
-                Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
-              </p>
-              <div>
-                <Link to="/about">
-                  <button className="bg-ocean text-white text-2xl sm:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
-                    Check our destinations
-                  </button>
-                </Link>
-              </div>
-              </div>
-              <div className="flex flex-col justify-center overflow-x-hidden w-1/2 mx-auto">
+            <div className="main-wrapper flex flex-col xl:flex-row bg-lightblue w-full z-50">
+                <div className="px-20 xl:px-0 xl:pl-24 pt-12 flex flex-col justify-center w-full xl:w-1/2">
+                  <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
+                    Experience the best travel in Dalmatia
+                  </h1>
+                  <p className="text-ocean text-4xl xl:text-md my-5">
+                    Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
+                  </p>
+                  <div>
+                    <Link to="/about">
+                      <button className="bg-ocean mb-10 xl:mb-0 text-white text-2xl xl:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                        Check our destinations
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              <div className="flex flex-col justify-center overflow-x-hidden w-5/6 xl:w-1/2 mx-auto">
                 <img
                   src={slider1}
                   alt=""
@@ -75,23 +75,23 @@ function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="main-wrapper flex bg-lightblue w-full z-50">
-        <div className="pl-24 pt-12 flex flex-col justify-center w-1/2">
-              <h1 className="text-ocean text-4xl sm:text-6xl font-bold lg:w-1/2 uppercase">
-                Experience the best travel in Dalmatia
-              </h1>
-              <p className="text-ocean text-2xl sm:text-md my-5">
-                Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
-              </p>
-              <div>
-                <Link to="/about">
-                  <button className="bg-ocean text-white text-2xl sm:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
-                    Check our destinations
-                  </button>
-                </Link>
-              </div>
-              </div>
-              <div className="flex flex-col justify-center overflow-x-hidden w-1/2 mx-auto">
+            <div className="main-wrapper flex flex-col xl:flex-row bg-lightblue w-full z-50">
+                <div className="px-20 xl:px-0 xl:pl-24 pt-12 flex flex-col justify-center w-full xl:w-1/2">
+                  <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
+                    Experience the best travel in Dalmatia
+                  </h1>
+                  <p className="text-ocean text-4xl xl:text-md my-5">
+                    Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
+                  </p>
+                  <div>
+                    <Link to="/about">
+                      <button className="bg-ocean mb-10 xl:mb-0 text-white text-2xl xl:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                        Check our destinations
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              <div className="flex flex-col justify-center overflow-x-hidden w-5/6 xl:w-1/2 mx-auto">
                 <img
                   src={vidslider2}
                   alt=""
@@ -100,25 +100,25 @@ function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="main-wrapper flex bg-lightblue w-full z-50">
-        <div className="pl-24 pt-12 flex flex-col justify-center w-1/2">
-              <h1 className="text-ocean text-4xl sm:text-6xl font-bold lg:w-1/2 uppercase">
-                Experience the best travel in Dalmatia
-              </h1>
-              <p className="text-ocean text-2xl sm:text-md my-5">
-                Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
-              </p>
-              <div>
-                <Link to="/about">
-                  <button className="bg-ocean text-white text-2xl sm:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
-                    Check our destinations
-                  </button>
-                </Link>
-              </div>
-              </div>
-              <div className="flex flex-col justify-center overflow-x-hidden w-1/2 mx-auto">
+            <div className="main-wrapper flex flex-col xl:flex-row bg-lightblue w-full z-50">
+                <div className="px-20 xl:px-0 xl:pl-24 pt-12 flex flex-col justify-center w-full xl:w-1/2">
+                  <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
+                    Experience the best travel in Dalmatia
+                  </h1>
+                  <p className="text-ocean text-4xl xl:text-md my-5">
+                    Lorem ipsum dolor sit amet amos eti ahid olor damus hix sirt
+                  </p>
+                  <div>
+                    <Link to="/about">
+                      <button className="bg-ocean mb-10 xl:mb-0 text-white text-2xl xl:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                        Check our destinations
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              <div className="flex flex-col justify-center overflow-x-hidden w-5/6 xl:w-1/2 mx-auto">
                 <img
-                  src="https://swiperjs.com/demos/images/nature-1.jpg"
+                  src={slider1}
                   alt=""
                 />
               </div>
@@ -131,18 +131,19 @@ function Home() {
       <section className="grid-cols-1 mt-96 sm:mt-0 sm:flex mt-8 px-24 my-12">
         <img
           src={aboutImg}
-          className="w-4/5 sm:w-1/3 sm:h-auto mx-auto flex self-center transform rotate-12 z-0 -mt-96 pr-12"
+          className="w-4/5 sm:w-1/3 sm:h-auto mx-auto flex self-center transform rotate-12 -mt-48 sm:-mt-0 z-0 pr-12"
           alt=""
         />
-        <div className="w-1/2 flex flex-col justify-center">
+        <div className="w-full mt-10 sm:mt-0 sm:w-1/2 flex flex-row sm:flex-col justify-center">
           <section className="flex flex-col my-8 px-24">
-            <h2 className="mb-4 text-ocean font-semibold text-5xl mx-auto muppercase">
-              Some of experiences from our guests
+            <h2 className="mb-4 text-ocean font-semibold text-5xl mx-auto uppercase">
+              Some experiences from our guests
             </h2>
             <Swiper
               slidesPerView={1}
               autoplay={{ delay: 5000 }}
-              className="testimonialsSwiper overflow-x-hidden min-h-half mr-20 sm:mr-0"
+              navigation={true}
+              className="testimonialsSwiper overflow-x-hidden min-h-half"
             >
               <SwiperSlide>
                 <div className="text-ocean w-full px-8">

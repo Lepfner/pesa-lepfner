@@ -36,13 +36,13 @@ html, body{
 }
 @media only screen and (min-width: 1000px) and (max-width: 1030px){
   html, body{
-    width: 170.5vh;
+    width: 170.6vh;
   }
   #navbar{
-    width: 170.5vh;
+    width: 170.6vh;
   }
 }
-@media only screen and (max-height: 700px){
+@media only screen and (max-height: 700px) and (min-height: 601px){
   html, body{
     width: 129.5vh;
   }
@@ -50,3 +50,4 @@ html, body{
     width: 129.5vh;
   }
   }
+  

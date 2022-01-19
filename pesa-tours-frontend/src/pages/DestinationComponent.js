@@ -16,7 +16,7 @@ function Destination({ mapItem }) {
         <img
           src={mapItem.isLand ? busevi[mapItem.id - 1] : mapItem.picture}
           alt=""
-          className="h-96 max-h-96 w-full"
+          className="h-96 md:h-64 max-h-96 w-full"
         />
         <Icon type={mapItem.type} />
         <div class="p-4 pb-8 bg-white">

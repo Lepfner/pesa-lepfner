@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles.css";
+
 function Navbar() {
   return (
     <nav id="navbar" className="flex sm:justify-between text-lg sm:text-md py-4 px-24 bg-black w-full bg-opacity-60 absolute top-0 left-0 right-0 items-center z-40">
