@@ -1,6 +1,6 @@
  
 import React from "react";
-import Select from 'react-select';
+// import Select from 'react-select';
 import MetaTags from "react-meta-tags";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,13 +9,13 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 function Contact() {
 
-  const options = [
-    { value: 'brac', label: 'Obilazak otoka Brača' },
-    { value: 'spilja', label: 'Modra Špilja' },
-    { value: 'boat', label: 'Cjelodnevni najam broda' },
-    { value: 'hvar', label: 'Hvar & Pakleni otoci' },
-    { value: 'solta', label: 'Kupanje na Šolti i Plava laguna' }
-  ]
+  // const options = [
+  //   { value: 'brac', label: 'Obilazak otoka Brača' },
+  //   { value: 'spilja', label: 'Modra Špilja' },
+  //   { value: 'boat', label: 'Cjelodnevni najam broda' },
+  //   { value: 'hvar', label: 'Hvar & Pakleni otoci' },
+  //   { value: 'solta', label: 'Kupanje na Šolti i Plava laguna' }
+  // ]
 
   return (
     <>
@@ -44,10 +44,10 @@ function Contact() {
           Phone number
           </label>
           <input className="shadow appearance-none border text-xl xl:text-sm rounded h-16 xl:h-10 w-full xl:w-2/3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Phone number"/>
-          <label className="block text-gray-700 text-2xl xl:text-sm font-bold mb-2 ml-3 mt-5" for="destination">
+          {/* <label className="block text-gray-700 text-2xl xl:text-sm font-bold mb-2 ml-3 mt-5" for="destination">
             Destination
           </label>
-          <Select defaultValue={{label: `${localStorage.getItem('current')}`, value: 0}} options={options} isSearchable={true} isClearable={true} className="appearance-none shadow rounded text-xl xl:text-sm h-14 xl:h-10 w-full xl:w-2/3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" placeholder="Destination"/>
+          <Select defaultValue={{label: `${localStorage.getItem('current')}`, value: 0}} options={options} isSearchable={true} isClearable={true} className="appearance-none shadow rounded text-xl xl:text-sm h-14 xl:h-10 w-full xl:w-2/3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" placeholder="Destination"/> */}
           <label className="block text-gray-700 text-2xl xl:text-sm font-bold mb-2 ml-3 mt-5" for="message">
             Message
           </label>

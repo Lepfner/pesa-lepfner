@@ -1,42 +1,19 @@
 [
     {
         "id": 1,
-        "name": "Obilazak otoka Brača",
-        "slug": "brac",
+        "name": "Zemljani radovi",
+        "slug": "zemljani",
         "type": "land",
         "description": "Lorem ipsum dolor sit amet",
         "picture": "https://www.adriaticluxuryvillas.com/uploads/images/6a7929ac24d6f3286068cc3138e52b74.jpg"
     },
     {
         "id": 2,
-        "name": "Modra Špilja",
-        "slug": "spilja",
+        "name": "Visokogradnja",
+        "slug": "visokogradnja",
         "type": "land",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "<ul><li className='mt-2 text-xl'>- Rad s radnim strojem</li> <li className='mt-2 text-xl'>- Odvoz i dovoz materijala</li> <li className='mt-2 text-xl'>- Ostali radovi u nisko gradnji</li><li className='mt-2 text-xl'>  - Radovi u holtikulturi ( uređenje vrtova, i okučnica ) </li> <li className='mt-2 text-xl'> - Izgradnja objekata ( obiteljske kuće, ville urbane, stambene zgrade   )  </li> </ul>",
         "picture": "https://croatia.hr/sites/default/files/styles/image_full_width/public/2018-05/bisevo-modra-spilja-optimizirano-za-tisak-zoran-jelaca_0.jpg?itok=228bV1cf"
-    },
-    {
-        "id": 3,
-        "name": "Cjelodnevni najam broda",
-        "slug": "boat",
-        "type": "land",
-        "description": "Lorem ipsum dolor sit amet",
-        "picture": "https://happytovisit.com/glib/1/Rent-Leut-Boat-Private-Daily-Rent-from-Split-and-Trogir-for-up-to-12-People-1-29462.png"
-    },
-    {
-        "id": 4,
-        "name": "Hvar & Pakleni otoci",
-        "slug": "hvar",
-        "type": "land",
-        "description": "Lorem ipsum dolor sit amet",
-        "picture": "https://croatia.hr/Images/t900x600-22097/croatia_islands_paklinski_002.jpg"
-    },
-    {
-        "id": 5,
-        "name": "Kupanje na Šolti i Plava laguna",
-        "slug": "solta",
-        "type": "land",
-        "description": "Lorem ipsum dolor sit amet",
-        "picture": "https://www.otoci.eu/wp-content/uploads/2018/07/Solta_Filip-Jakovcevic_Stomorska.jpg"
     }
+ 
 ]

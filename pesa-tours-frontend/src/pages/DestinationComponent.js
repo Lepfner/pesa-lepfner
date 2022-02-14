@@ -2,13 +2,12 @@ import React from "react";
 import bus1 from "../assets/busevi/AM_00777 copy.jpg";
 import bus2 from "../assets/busevi/AM_00826 copy.jpg";
 import bus3 from "../assets/busevi/AM_00858 copy.jpg";
-import bus4 from "../assets/busevi/AM_00900 copy.jpg";
-import bus5 from "../assets/busevi/AM_00905 copy.jpg";
+
 import Icon from "./Icon";
 
 function Destination({ mapItem }) {
   console.log(mapItem.isLand, mapItem.bus);
-  const busevi = [bus1, bus2, bus3, bus4, bus5];
+  const busevi = [bus1, bus2, bus3];
 
   return (
     <>

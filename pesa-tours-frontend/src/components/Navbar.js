@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import logo from '../assets/pesa logo.jpg'
 
 function Navbar() {
 
@@ -21,28 +22,29 @@ function Navbar() {
   return (
     <>
     <nav id="navbar" className="flex justify-between text-lg sm:text-md h-24 sm:h-20 py-4 px-24 bg-black w-full bg-opacity-60 absolute top-0 left-0 right-0 items-center z-40">
-      <h2 className="w-full text-white sm:w-auto">PEŠA TOURS</h2>
+      <img className="w-64 text-white " alt="" src={logo}/>
       <ul className="sm:flex hidden space-x-8 text-white text-bold items-center">
         <li>
-          <Link to="/"><p class="link">HOME</p></Link>
+          <Link to="/"><p class="link">NASLOVNICA</p></Link>
         </li>
         <li>
-          <Link to="/destinations"><p class="link">DESTINATIONS</p></Link>
+          <Link to="/destinations"><p class="link">DESTINACIJE</p></Link>
         </li>
         <li>
-          <Link to="/construction-list"><p class="link">CONSTRUCTIONS</p></Link>
+          <Link to="/construction-list"><p class="link">GRADILIŠTE
+          </p></Link>
         </li>
         <li>
-          <Link to="/about"><p class="link">ABOUT</p></Link>
+          <Link to="/about"><p class="link">O NAMA</p></Link>
         </li>
         <li>
-          <Link to="/contact"><p class="link">CONTACT</p></Link>
-        </li>
+          <Link to="/nasi-partneri"><p class="link">NAŠI PARTNERI</p></Link>
+        </li> 
       </ul>
       <button onClick={openOverlay} id="open" className=""><FontAwesomeIcon icon={faBars} size="2x" className="text-white sm:hidden"/></button>
       <Link to="/contact">
-        <button className="bg-transparent hidden sm:flex ml-10 md:ml-0 text-white px-4 py-2 border border-white hover:border-transparent hover:bg-lightblue font-bold transition duration-500 uppercase z-10">
-          GET IN TOUCH
+        <button className="bg-transparent uppercase hidden sm:flex ml-10 md:ml-0 text-white px-4 py-2 border border-white hover:border-transparent hover:bg-lightblue font-bold transition duration-500  z-10">
+          Javite nam se
         </button>
       </Link>
 
