@@ -14,41 +14,37 @@ function Footer() {
         width={"100%"}
         height={"400"}
       ></iframe>
-      <div className="bg-lightblue text-ocean px-24 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 ">
-          <ul className="flex space-x-8">
+      <div class="bg-lightblue text-ocean px-24 py-12">
+        <div class="xl:flex xl:flex-row xl:justify-evenly">
+          <ul class="flex justify-evenly space-x-8">
             <li>
-              <a href="/">
-                <img className="h-10 mt-2" src={face} alt="" />
+              <a href="https://www.facebook.com/Pe%C5%A1a-Tours-108995224601795/?ref=pages_you_manage">
+                <img class="h-14 sm:h-12 mt-5 sm:mt-2 xl:mt-2" src={face} alt=""/>
               </a>
             </li>
             <li>
-              <a href="/">
-                <img className="h-14" src={insta} alt="" />
+              <a href="https://www.instagram.com/pesatours/">
+                <img class="h-24 sm:h-16" src={insta} alt=""/>
               </a>
             </li>
           </ul>
-          <ul className="flex justify-end space-x-8">
-        <a href="https://www.jadrolinija.hr/" target="_blank" rel="noreferrer"><img className="h-20 mt-2" src={jadrolinija} alt=""/></a>
-        <a href="https://www.airport-brac.hr/en/home/" target="_blank" rel="noreferrer"> <img className="h-40" src={areo} alt=""/></a>.
-
+          <ul>
+            <li>
+              <p class="text-2xl text-justify sm:text-center mt-10 sm:mt-5 md:text-sm sm:text-md">Posjetite nas na društvene mreže i otkrijte još zanimljivosti, također nudimo vam link do Jadrolinija stranice za pomorski prijevoz putnika i vozila do kopna i također vam dajemo link od aerodroma Split i Brač</p>
+            </li>
           </ul>
-          <p> </p>
-          <p>
-              We offer links to Jadrolinija for regular maritime transport of passengers and cargo, and also links for the airports of Split and Brač.</p>
+          <ul class="flex mt-16 sm:mt-0 justify-evenly xl:justify-end space-x-8">
+            <a href="https://www.jadrolinija.hr/" target="_blank" rel="noreferrer">
+              <img class="h-20 mt-2" src={jadrolinija} alt=""/>
+            </a>
+            <a href="https://www.airport-brac.hr/en/home/" target="_blank" rel="noreferrer">
+              <img class="h-40" src={areo} alt=""/>
+            </a>
+          </ul>
         </div>
-        <span className="h-px bg-ocean w-full block my-8"></span>
-        <div className="flex justify-center text-ocean ">
-          Peša Tours - Design and Development by
-          <a
-            href="https://epic-code.hr"
-            target="_blank"
-            rel="noreferrer"
-            className="font-bold"
-          >
-            {" "}
-            &nbsp;Epic Code
-          </a>
+        <span class="h-px bg-ocean w-full block my-8">
+        </span>
+        <div class="flex justify-center text-ocean text-2xl md:text-sm sm:text-sm">
         </div>
       </div>
     </>

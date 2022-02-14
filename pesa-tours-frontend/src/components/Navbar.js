@@ -1,68 +1,43 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import slikaLoga from '../assets/pesalogo.jpg'
 import "../styles.css";
+
+
 function Navbar() {
-  const [Val, setVal] = useState('about')
-  function d(b){
-    switch (b) {
-    case 'About':
-      window.location.href=`/about-trip`
-      break;
-      case 'About Construction':
-       window.location.href=`/about-construction`
-       break;
-       case 'About Destination':
-       window.location.href=`/about-destination`
-       break;
-             default: console.log('aaaaaaa')
-      break;}
-  }
+
   return (
-    <nav className="flex justify-between py-4 px-24 bg-white bg-opacity-60 absolute top-0 left-0 right-0 items-center z-40">
-      <h2>Peša tours</h2>
-      <ul className="flex space-x-8 text-ocean text-bold items-center">
+    <nav id="navbar" class="flex justify-between text-lg sm:text-md h-24 sm:h-20 py-4 px-24 bg-black w-full bg-opacity-60 absolute top-0 left-0 right-0 items-center z-40">
+      <img class="w-64 text-white " alt="" src={slikaLoga}></img>
+      <ul class="sm:flex hidden space-x-8 text-white text-bold items-center">
         <li>
-          <Link to="/"><p class="link">Home</p></Link>
+          <a href="/">
+            <p class="link">NASLOVNICA</p>
+          </a>
         </li>
         <li>
-          <Link to="/destinations"><p class="link">Destinations</p></Link>
+          <a href="/destinations">
+            <p class="link">DESTINACIJE</p>
+          </a>
         </li>
         <li>
-          <Link to="/construction-list"><p class="link">Constructions</p></Link>
-        </li>
-        <li class="link">
-          <select value={Val}
-          className="bg-transparent focus:no-underline" 
-          defaultValue={'about'}
-         onChange={(e)=>{setVal(e.target.value);
-          let b=e.target.value
-          console.log(b)
-     d(b)
-         }}>
-           <option value="about">about</option>
-            <option value="About">
-            
-              About Trip
-            </option>
-            <option value="About Construction">
-             About Construction
-            </option>
-            <option value="About Destination">
-              About Destination
-            </option>
-          </select>
-        </li>
-        <li>
-          <Link to="/contact"><p class="link">Contact</p></Link>
+          <a href="/construction-list">
+            <p class="link">GRADILIŠTE</p>
+          </a></li><li><a href="/about">
+            <p class="link">O NAMA</p>
+          </a>
         </li>
       </ul>
-      <Link to="/contact">
-        <button className="bg-transparent text-ocean px-4 py-2 border border-ocean hover:border-transparent hover:bg-skin font-bold transition duration-500 uppercase z-10">
-          Get in touch
-        </button>
-      </Link>
-    </nav>
-  );
+      <button id="open" class="">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 fa-2x text-white sm:hidden" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+        </svg>
+      </button>
+      <a href="/contact">
+        <button class="bg-transparent uppercase hidden sm:flex ml-10 md:ml-0 text-white px-4 py-2 border border-white hover:border-transparent hover:bg-lightblue font-bold transition duration-500  z-10">Javite nam se</button>
+      </a>
+      </nav>
+      );
 }
 
 export default Navbar;

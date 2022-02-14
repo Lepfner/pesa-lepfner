@@ -5,9 +5,7 @@ import {
 } from "react-router-dom";
 
 import Home from './pages/Home';
-import AboutConstruction from './pages/AboutConstruction';
-import AboutTrip from './pages/AboutTrip';
-import AboutDestination from './pages/AboutDestinations';
+import About from './pages/About';
 
 import Contact from './pages/Contact'
 import Destinations from './pages/DestinationsList';
@@ -22,14 +20,8 @@ function App() {
       <div className="overflow-x-hidden">
         <Navbar />
         <Switch>
-          <Route exact path="/about-destination">
-            <AboutDestination />
-          </Route>
-          <Route exact path="/about-trip">
-            <AboutTrip />
-          </Route>
-          <Route exact path="/about-construction">
-            <AboutConstruction />
+          <Route exact path="/about">
+            <About />
           </Route>
           <Route exact path="/">
             <Home />
