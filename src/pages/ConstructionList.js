@@ -15,10 +15,17 @@ function ConstructionList() {
         <meta property="og:title" content="Peša Tours" />
         <meta property="og:image" content="path/to/image.jpg" />
       </MetaTags>
-      <div style={{backgroundColor:'#a17e50'}} className="flex flex-col justify-end w-full min-h-half px-10 md:px-24 py-4 ">
+      <div style={{backgroundColor:'#a17e50'}} className="flex flex-col sm:pt-24 justify-end w-full min-h-half px-10 md:px-24 py-4 ">
         <h1 className="text-black text-5xl uppercase font-bold ml-4">
           Zemljani radovi i visokogradnja
         </h1>
+        <ul>
+          <li className='mt-2 text-xl'>- Rad s radnim strojem</li>
+          <li className='mt-2 text-xl'>- Odvoz i dovoz materijala</li>
+          <li className='mt-2 text-xl'>- Ostali radovi u nisko gradnji</li>
+          <li className='mt-2 text-xl'>  - Radovi u holtikulturi ( uređenje vrtova, i okučnica ) </li>
+          <li className='mt-2 text-xl'> - Izgradnja objekata ( obiteljske kuće, ville urbane, stambene zgrade   )  </li>
+        </ul>
 
       </div>
 

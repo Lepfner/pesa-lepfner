@@ -7,13 +7,24 @@ import aerosplit from "../assets/aerosplit.jpeg";
 function Footer() {
   return (
     <>
-      {/* Map */}
+      {/*
+      Old map
       <iframe
         title="frame"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d92768.38644546816!2d16.605398!3d43.397677!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134a9d978135cf1f%3A0x7187868186fb2805!2sSupetar%2C%20Hrvatska!5e0!3m2!1shr!2sus!4v1629740861752!5m2!1shr!2sus"
         width={"100%"}
         height={"400"}
-      ></iframe>
+      ></iframe> */}
+      <iframe
+        width="100%"
+        height="400"
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Supetar+(Hrvatska)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">
+        </a>
+      </iframe>
       <div className="bg-lightblue text-ocean px-24 py-12">
         <div className="xl:flex xl:flex-row xl:justify-evenly">
           <ul className="flex justify-evenly space-x-8">
