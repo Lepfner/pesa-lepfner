@@ -1,16 +1,24 @@
-import React from "react";
+//React
+import React, { useEffect } from "react";
+//Import slika za destinacije i transfere
 import bus1 from "../assets/busevi/AM_00777 copy.jpg";
 import bus2 from "../assets/busevi/AM_00826 copy.jpg";
 import bus3 from "../assets/busevi/AM_00858 copy.jpg";
-import brod1 from '../assets/20200810_113107.JPG';
-import brod2 from '../assets/20200810_102904.JPG';
-import brod3 from '../assets/20200810_104859.JPG';
-import brod4 from '../assets/20200724_130659.JPG';
-import brod5 from '../assets/20190712_074155.JPG';
-
+import brod1 from '../assets/brodovi/20200810_113107.JPG';
+import brod2 from '../assets/brodovi/20200810_102904.JPG';
+import brod3 from '../assets/brodovi/20200810_104859.JPG';
+import brod4 from '../assets/brodovi/20200724_130659.JPG';
+import brod5 from '../assets/brodovi/20190712_074155.JPG';
+//Ikona za destinacije
 import Icon from "./Icon";
 
+
 function Destination({ mapItem }) {
+
+  useEffect(() => {
+    document.getElementById("footer").style.backgroundColor = "#ddebe9";
+  });
+
   console.log(mapItem.isLand, mapItem.bus);
   const busevi = [bus1, bus2, bus3];
   const brodovi = [brod1, brod2, brod3, brod4, brod5];
@@ -36,7 +44,7 @@ function Destination({ mapItem }) {
             }}
             className="text-ocean"
           >
-          <p className="text-xl">{mapItem.description}</p>
+            <p className="text-xl">{mapItem.description}</p>
           </p>
         </div>
       </div>

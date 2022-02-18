@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Transferi",
+        "slug": "transfer",
+        "type": "land",
+        "description": "",
+        "isLand": true
+    },
+    {
+        "id": 2,
+        "name": "Cjelodnevni najam vozila",
+        "slug": "rent",
+        "type": "land",
+        "description": "",
+        "isLand": true
+    },
+    {
+        "id": 3,
+        "name": "Izleti",
+        "slug": "excursion",
+        "type": "land",
+        "description": "",
+        "isLand": true
+    }
+]

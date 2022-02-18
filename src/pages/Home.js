@@ -1,17 +1,17 @@
-import React from "react";
+//React components
+import React, { useEffect } from "react";
 import MetaTags from "react-meta-tags";
 // Import Swiper React components
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/swiper.min.css";
-import slider1 from "../assets/busevi/AM_00777 copy.jpg";
-// import slider3 from "../assets/AM_00782 copy.jpg"
-import vidslider2 from "../assets/dd.jpg";
 import "swiper/components/effect-coverflow/effect-coverflow.min.css";
 import "swiper/components/navigation/navigation.min.css";
-
-import aboutImg from "../assets/about-home.jpg";
+//Images
+import slider1 from "../assets/busevi/AM_00777 copy.jpg";
+import vidslider2 from "../assets/other/dd.jpg";
+import aboutImg from "../assets/other/about-home.jpg";
 
 // import Swiper core and required modules
 import SwiperCore, { EffectCoverflow, Navigation } from "swiper/core";
@@ -21,6 +21,11 @@ SwiperCore.use([EffectCoverflow, Navigation]);
 SwiperCore.use([Autoplay]);
 
 function Home() {
+
+  useEffect(() => {
+    document.getElementById("footer").style.backgroundColor = "#ddebe9";
+  });
+
   return (
     <>
       {/* Hero section with meta tags */}
@@ -78,7 +83,7 @@ function Home() {
                   <div>
                     <Link to="/destinations">
                       <button className="bg-ocean mb-10 xl:mb-0 text-white text-2xl xl:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
-                      Provjerite naša putovanja
+                        Provjerite naša putovanja
                       </button>
                     </Link>
                   </div>
@@ -91,15 +96,14 @@ function Home() {
             <SwiperSlide>
               <div className="main-wrapper flex flex-col xl:flex-row bg-lightblue w-full z-50">
                 <div className="px-20 xl:px-0 pb-10 xl:pl-24 pt-12 flex flex-col justify-center w-full xl:w-1/2">
-                  <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">
-Usluge građevine                  </h1>
+                  <h1 className="text-ocean text-6xl font-bold lg:w-1/2 uppercase">Usluge građevine</h1>
                   <p className="text-ocean text-4xl pr-10 xl:text-md my-5">
-                    
+
                   </p>
                   <div>
                     <Link to="/construction-list">
                       <button className="bg-ocean mb-10 xl:mb-0 text-white text-2xl xl:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
-                       Provjerite naše usluge
+                        Provjerite naše usluge
                       </button>
                     </Link>
                   </div>
