@@ -4,24 +4,22 @@ import React, { useEffect } from "react";
 import bus1 from "../assets/busevi/AM_00777 copy.jpg";
 import bus2 from "../assets/busevi/AM_00826 copy.jpg";
 import bus3 from "../assets/busevi/AM_00858 copy.jpg";
-import brod1 from '../assets/brodovi/20200810_113107.JPG';
-import brod2 from '../assets/brodovi/20200810_102904.JPG';
-import brod3 from '../assets/brodovi/20200810_104859.JPG';
-import brod4 from '../assets/brodovi/20200724_130659.JPG';
-import brod5 from '../assets/brodovi/20190712_074155.JPG';
+import sea1 from '../assets/sea/1.jpg';
+import sea2 from '../assets/sea/2.jpg';
+import sea3 from '../assets/brodovi/20200810_113107.JPG';
+import sea4 from '../assets/sea/3.jpg';
+import sea5 from '../assets/sea/4.jpg';
 //Ikona za destinacije
 import Icon from "./Icon";
-
 
 function Destination({ mapItem }) {
 
   useEffect(() => {
     document.getElementById("footer").style.backgroundColor = "#ddebe9";
   });
-
-  console.log(mapItem.isLand, mapItem.bus);
+  
   const busevi = [bus1, bus2, bus3];
-  const brodovi = [brod1, brod2, brod3, brod4, brod5];
+  const brodovi = [sea1, sea2, sea3, sea4, sea5];
 
   return (
     <>

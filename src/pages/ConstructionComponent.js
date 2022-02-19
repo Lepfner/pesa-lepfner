@@ -1,11 +1,14 @@
 //React
 import React, { useEffect } from "react";
 //Import slika za radove
-
+import const1 from '../assets/construction/1.jpg';
+import const2 from '../assets/construction/2.jpg';
 //Ikona za destinacije
 import Icon from "./Icon";
 
 function Construction({ mapItem }) {
+
+  const slike = [const1, const2];
 
   useEffect(() => {
     document.getElementById("footer").style.backgroundColor = "#ddebe9";
@@ -15,7 +18,7 @@ function Construction({ mapItem }) {
     <>
       <div className="p-5 rounded-md cursor-pointer overflow-hidden transform hover:scale-105 duration-500 mx-auto">
         <img
-          src="https://www.poslovni.hr/wp-content/uploads/2020/02/6b0aea41fb9f22777c0aac7878a30248-1600x1000.jpg"
+          src={slike[mapItem.id - 1]}
           alt=""
           className="h-96 md:h-64 max-h-96 w-full"
         />
