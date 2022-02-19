@@ -1,5 +1,6 @@
-//React
+//React components
 import React, { useEffect } from "react";
+import parse from 'html-react-parser';
 //Import slika za radove
 import const1 from '../assets/construction/1.jpg';
 import const2 from '../assets/construction/2.jpg';
@@ -13,6 +14,8 @@ function Construction({ mapItem }) {
   useEffect(() => {
     document.getElementById("footer").style.backgroundColor = "#ddebe9";
   });
+
+  var desc = parse(mapItem.description);
 
   return (
     <>
@@ -35,7 +38,7 @@ function Construction({ mapItem }) {
             }}
             className="text-ocean"
           >
-            <p className="text-xl">{mapItem.description}</p>
+            <p className="text-xl">{desc}</p>
           </p>
         </div>
       </div>

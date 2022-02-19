@@ -2,16 +2,27 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
-import { SRLWrapper } from "simple-react-lightbox";
 //Data
 import Sea from '../Data/sea.json';
 import Transfer from '../Data/transfer.json'
+//Images
+import bus1 from "../assets/busevi/AM_00777 copy.jpg";
+import bus2 from "../assets/busevi/AM_00826 copy.jpg";
+import bus3 from "../assets/busevi/AM_00858 copy.jpg";
+import sea1 from '../assets/sea/1.jpg';
+import sea2 from '../assets/sea/2.jpg';
+import sea3 from '../assets/brodovi/20200810_113107.JPG';
+import sea4 from '../assets/sea/3.jpg';
+import sea5 from '../assets/sea/4.jpg';
 
 function Destinations() {
 
     useEffect(() => {
         document.getElementById("footer").style.backgroundColor = "#ddebe9";
     });
+
+    const busevi = [bus1, bus2, bus3];
+    const brodovi = [sea1, sea2, sea3, sea4, sea5];
 
     const seaPath = ["brac", "spilja", "boat", "hvar", "solta"];
     const transPath = ["transfer", "rent", "excursion"];
@@ -49,15 +60,13 @@ function Destinations() {
                             </Link>
                         </div>
                         <div className="w-full xl:w-1/2 mt-10 xl:mt-0">
-                            <SRLWrapper>
-                                <a href={filteredName.picture}>
-                                    <img
-                                        src={filteredName.picture}
-                                        alt=""
-                                        className="w-full pr-0 xl:pr-10 h-auto mx-auto flex self-center ml-0 xl:ml-10"
-                                    />
-                                </a>
-                            </SRLWrapper>
+                            <div className="flex justify-center">
+                                <img
+                                    src={filteredName.isLand ? busevi[filteredName.id - 1] : brodovi[filteredName.id - 1]}
+                                    alt=""
+                                    className="h-96 md:h-64 max-h-96 w-full sm:w-3/4"
+                                />
+                            </div>
                         </div>
                     </section>
                 </div>

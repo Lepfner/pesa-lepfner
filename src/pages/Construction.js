@@ -2,15 +2,20 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
-import { SRLWrapper } from "simple-react-lightbox";
+import parse from 'html-react-parser';
 //Data
 import Data from '../Data/construction.json';
+//Import slika za radove
+import const1 from '../assets/construction/1.jpg';
+import const2 from '../assets/construction/2.jpg';
 
 function Construction() {
 
     useEffect(() => {
         document.getElementById("footer").style.backgroundColor = "#876A42"
     });
+
+    const slike = [const1, const2];
 
     const location = useLocation();
     const path = location.pathname.slice(15);
@@ -27,7 +32,7 @@ function Construction() {
                     <section className="flex flex-col xl:flex-row mt-8 px-24 my-12">
                         <div className="w-full xl:w-1/2 flex flex-col justify-center">
                             <h2 className=" text-ocean text-3xl xl:text-xl font-light mb-4">
-                                {filteredName.description}
+                                {parse(filteredName.description)}
                             </h2>
                             <Link to="/contact">
                                 <button onClick={localStorage.setItem('current', `${filteredName.name}`)} className="bg-ocean text-xl xl:text-lg text-white px-4 w-full xl:w-1/2 self-center mt-5 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
@@ -36,15 +41,13 @@ function Construction() {
                             </Link>
                         </div>
                         <div className="w-full xl:w-1/2 mt-10 xl:mt-0">
-                            <SRLWrapper>
-                                <a href={filteredName.picture}>
-                                    <img
-                                        src={filteredName.picture}
-                                        alt=""
-                                        className="w-full pr-0 xl:pr-10 h-auto mx-auto flex self-center ml-0 xl:ml-10"
-                                    />
-                                </a>
-                            </SRLWrapper>
+                            <div className="flex justify-center">
+                                <img
+                                    src={slike[filteredName.id - 1]}
+                                    alt=""
+                                    className="h-96 md:h-64 max-h-96 w-full sm:w-3/4"
+                                />
+                            </div>
                         </div>
                     </section>
                 </div>
