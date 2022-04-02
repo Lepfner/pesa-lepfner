@@ -1,6 +1,7 @@
-//React components
+//React & components
 import React from "react";
 import { Link } from "react-router-dom";
+import Translate from "./Translate";
 //CSS
 import "../styles.css";
 //Icons & pictures
@@ -28,29 +29,27 @@ function Navbar() {
         <img className="w-64 text-white " alt="" src={logo} />
         <ul className="sm:flex hidden space-x-8 text-white text-bold items-center">
           <li>
-            <Link to="/"><p class="link">NASLOVNICA</p></Link>
+            <Link to="/"><p className="link">NASLOVNICA</p></Link>
           </li>
           <li>
-            <Link to="/destinations"><p class="link">DESTINACIJE</p></Link>
+            <Link to="/destinations"><p className="link">DESTINACIJE</p></Link>
           </li>
           <li>
-            <Link to="/construction-list"><p class="link">GRADILIŠTE
+            <Link to="/construction-list"><p className="link">GRADILIŠTE
             </p></Link>
           </li>
           <li>
-            <Link to="/about"><p class="link">O NAMA</p></Link>
+            <Link to="/about"><p className="link">O NAMA</p></Link>
           </li>
           <li>
-            <Link to="/partners"><p class="link">NAŠI PARTNERI</p></Link>
+            <Link to="/partners"><p className="link">NAŠI PARTNERI</p></Link>
+          </li>
+          <li>
+            <Translate/>
           </li>
         </ul>
         <button onClick={openOverlay} id="open" className=""><FontAwesomeIcon icon={faBars} size="2x" className="text-white sm:hidden" /></button>
         <div>
-          <div>
-            <div id="google_translate_element"></div>
-
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-          </div>
           <Link to="/contact">
             <button className="bg-transparent uppercase hidden sm:flex ml-10 md:ml-0 text-white px-4 py-2 border border-white hover:border-transparent hover:bg-lightblue font-bold transition duration-500  z-10">
               Javite nam se

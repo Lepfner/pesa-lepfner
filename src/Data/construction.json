@@ -4,7 +4,7 @@
         "name": "Zemljani radovi",
         "slug": "zemljani",
         "type": "construction",
-        "description": "Lorem ipsum dolor sit amet"
+        "description": "<ul><li className='mt-2 text-xl'>- Rad s radnim strojem</li> <li className='mt-2 text-xl'>- Odvoz i dovoz materijala</li> <li className='mt-2 text-xl'>- Ostali radovi u nisko gradnji</li><li className='mt-2 text-xl'>  - Radovi u holtikulturi ( uređenje vrtova, i okučnica ) </li> <li className='mt-2 text-xl'> - Izgradnja objekata ( obiteljske kuće, ville urbane, stambene zgrade   )  </li> </ul>"
     },
     {
         "id": 2,
