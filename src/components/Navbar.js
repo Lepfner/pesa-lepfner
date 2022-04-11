@@ -25,9 +25,9 @@ function Navbar() {
 
   return (
     <>
-      <nav id="navbar" className="flex justify-between text-lg sm:text-md h-24 sm:h-20 py-4 px-24 bg-black w-full bg-opacity-60 absolute top-0 left-0 right-0 items-center z-40">
-        <img className="w-64 text-white " alt="" src={logo} />
-        <ul className="sm:flex hidden space-x-8 text-white text-bold items-center">
+      <nav id="navbar" className="flex lg:justify-between text-md sm:text-md h-24 sm:h-20 py-4 px-10 bg-black w-full bg-opacity-60 absolute top-0 left-0 right-0 items-center z-40">
+        <img className="w-52 text-white lg:ml-2" alt="" src={logo} />
+        <ul className="lg:flex hidden space-x-6 text-white text-bold items-center">
           <li>
             <Link to="/"><p className="link">NASLOVNICA</p></Link>
           </li>
@@ -48,10 +48,10 @@ function Navbar() {
             <Translate/>
           </li>
         </ul>
-        <button onClick={openOverlay} id="open" className=""><FontAwesomeIcon icon={faBars} size="2x" className="text-white sm:hidden" /></button>
+        <button onClick={openOverlay} id="open" className="ml-auto"><FontAwesomeIcon icon={faBars} size="2x" className="text-white lg:hidden" /></button>
         <div>
           <Link to="/contact">
-            <button className="bg-transparent uppercase hidden sm:flex ml-10 md:ml-0 text-white px-4 py-2 border border-white hover:border-transparent hover:bg-lightblue font-bold transition duration-500  z-10">
+            <button className="bg-transparent uppercase hidden lg:flex ml-10 md:ml-0 text-white px-4 py-2 border border-white hover:border-transparent hover:bg-lightblue font-bold transition duration-500  z-10">
               Javite nam se
             </button>
           </Link>

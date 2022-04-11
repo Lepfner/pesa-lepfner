@@ -31,7 +31,7 @@ function Destination({ mapItem }) {
         />
         <Icon type={mapItem.type} />
         <div class="p-4 pb-8 bg-white">
-          <h1 class="mt-4 font-bold text-2xl text-ocean">{mapItem.name}</h1>
+          <h1 class="mt-4 font-bold text-3xl text-ocean">{mapItem.name}</h1>
           <p
             style={{
               overflow: "hidden",
@@ -42,7 +42,7 @@ function Destination({ mapItem }) {
             }}
             className="text-ocean"
           >
-            <p className="text-xl">{mapItem.description}</p>
+            <p className="text-2xl lg:text-xl">{mapItem.description}</p>
           </p>
         </div>
       </div>

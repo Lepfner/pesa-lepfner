@@ -51,7 +51,7 @@ function Home() {
               modifier: 1,
               slideShadows: true,
             }}
-            className="destinationSlider xl:mt-24 overflow-x-hidden z-30"
+            className="destinationSlider mt-20 lg:mt-20 xl:mt-24 overflow-x-hidden z-30"
           >
             <SwiperSlide>
               <div className="main-wrapper flex flex-col xl:flex-row bg-lightblue w-full z-50">
@@ -62,7 +62,7 @@ function Home() {
                   <p className="text-ocean text-4xl pr-10 xl:text-md my-5"></p>
                   <div>
                     <Link to="/destinations">
-                      <button className="bg-ocean mb-10 xl:mb-0 text-white text-2xl xl:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                      <button className="bg-ocean mb-10 xl:mb-0 text-white text-3xl xl:text-md px-4 py-3 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
                         Provjerite naša putovanja
                       </button>
                     </Link>
@@ -82,7 +82,7 @@ function Home() {
                   <p className="text-ocean text-4xl pr-10 xl:text-md my-5"></p>
                   <div>
                     <Link to="/destinations">
-                      <button className="bg-ocean mb-10 xl:mb-0 text-white text-2xl xl:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                      <button className="bg-ocean mb-10 xl:mb-0 text-white text-3xl xl:text-md px-4 py-3 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
                         Provjerite naša putovanja
                       </button>
                     </Link>
@@ -102,7 +102,7 @@ function Home() {
                   </p>
                   <div>
                     <Link to="/construction-list">
-                      <button className="bg-ocean mb-10 xl:mb-0 text-white text-2xl xl:text-md px-4 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                      <button className="bg-ocean mb-10 xl:mb-0 text-white text-3xl xl:text-md px-4 py-3 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
                         Provjerite naše usluge
                       </button>
                     </Link>
@@ -123,11 +123,11 @@ function Home() {
       <section className="grid-cols-1  sm:mt-0 sm:flex mt-8 px-24">
         <img
           src={aboutImg}
-          className="w-4/5 sm:w-1/3 sm:h-auto mx-auto flex self-center transform rotate-12 -mt-48 sm:-mt-0 z-0 pr-12"
+          className="md:w-1/2  sm:w-1/3 sm:h-auto mx-auto flex self-center transform rotate-12  sm:-mt-0 md:-mt-96 lg:-mt-0 z-0 pr-12"
           alt=""
         />
         <div className="w-full mt-10 sm:mt-0 sm:w-1/2 flex flex-row sm:flex-col justify-center">
-          <section className="flex flex-col my-8 px-0 overflow-x-hidden">
+          <section className="flex  flex-col my-8 px-0 overflow-x-hidden">
             <h2 className="text-ocean font-semibold text-4xl mx-auto uppercase">
               Some experiences from our guests
             </h2>
@@ -139,7 +139,7 @@ function Home() {
             >
               <SwiperSlide>
                 <div className="text-ocean w-full px-8">
-                  <p className="text-lg italic w-full mx-auto mt-12">
+                  <p className="lg:text-lg text-2xl  italic w-full mx-auto mt-12">
                     Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit
                     aliquip nostrud nulla. Adipisicing proident pariatur
                     consectetur sint sunt irure duis qui sit minim. Parit
@@ -150,7 +150,7 @@ function Home() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="text-ocean w-full px-8">
-                  <p className="text-lg italic w-full mx-auto mt-12">
+                  <p className="lg:text-lg text-2xl  italic w-full mx-auto mt-12">
                     Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit
                     aliquip nostrud nulla. Adiptur laboris tempor quis ullamco
                     ut pariatur veniam sunt pariatur.
@@ -160,7 +160,7 @@ function Home() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="text-ocean w-full px-8">
-                  <p className="text-lg italic w-full mx-auto mt-12">
+                  <p className="lg:text-lg text-2xl  italic w-full mx-auto mt-12">
                     Anim aliqua amet ut cillum amet aliqua ea ut reprehenderit
                     aliquip nostrud nulla. Adipisicing proident pariatur
                     consectetur sint sunt irure duis qui sit minim. Pariatur

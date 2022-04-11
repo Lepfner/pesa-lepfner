@@ -328,14 +328,12 @@ function Destinations() {
     ]
 
     if(seaPath.includes(path)){
-        console.log("more");
         Data = Sea;
     }
 
     if(transPath.includes(path)){
-        console.log("bus");
         Data = Transfer;
-        if (path=="transfer"){
+        if (path==="transfer"){
             sendTable=table2Data;
         } else {
             sendTable=tableData;
@@ -356,7 +354,7 @@ function Destinations() {
                             {filteredName.description}
                             </h2>
                             <Link to="/contact">
-                                <button onClick={localStorage.setItem('current', `${filteredName.name}`)} className="bg-ocean text-xl xl:text-lg text-white px-4 w-full xl:w-full self-center mt-5 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                                <button onClick={localStorage.setItem('current', `${filteredName.name}`)} className="bg-ocean text-2xl xl:text-lg text-white px-4 w-full xl:w-full self-center mt-5 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
                                     Rezervirajte!
                                 </button>
                             </Link>

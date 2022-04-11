@@ -26,6 +26,7 @@ html, body{
   width: 108vh;
 }
 }
+#google_translate_element span{display: none;}
 @media only screen and (max-height: 768px){
   html, body{
     width: 126vh;
@@ -34,6 +35,7 @@ html, body{
     width: 126vh;
   }
 }
+
 @media only screen and (min-width: 1000px) and (max-width: 1030px){
   html, body{
     width: 170.6vh;
