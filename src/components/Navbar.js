@@ -27,7 +27,7 @@ function Navbar() {
     <>
       <nav id="navbar" className="flex lg:justify-between text-md sm:text-md h-24 sm:h-20 py-4 px-10 bg-black w-full bg-opacity-60 absolute top-0 left-0 right-0 items-center z-40">
         <img className="w-52 text-white lg:ml-2" alt="" src={logo} />
-        <ul className="lg:flex hidden space-x-6 text-white text-bold items-center">
+        <ul className="lg:flex hidden space-x-6 ml-10 text-white text-bold items-center">
           <li>
             <Link to="/"><p className="link">NASLOVNICA</p></Link>
           </li>

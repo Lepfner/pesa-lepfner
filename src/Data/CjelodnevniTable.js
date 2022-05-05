@@ -3,7 +3,7 @@ import "../styles.css";
 
 const BasicTable = ({data}) => {
   return (
-    <div>
+    <div className="overflow-x-scroll md:overflow-hidden">
         {data}
     </div>
   );

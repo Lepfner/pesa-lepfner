@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "../styles.css"
 
 const GoogleTranslate = () => {
   useEffect(() => {
@@ -11,7 +12,7 @@ const GoogleTranslate = () => {
   });
 
   return (
-    <div id="google_translate_element"></div>
+    <div id="google_translate_element" className="linkTranslate"></div>
   );
 };
 

@@ -123,7 +123,7 @@ function Home() {
       <section className="grid-cols-1  sm:mt-0 sm:flex mt-8 px-24">
         <img
           src={aboutImg}
-          className="md:w-1/2  sm:w-1/3 sm:h-auto mx-auto flex self-center transform rotate-12  sm:-mt-0 md:-mt-96 lg:-mt-0 z-0 pr-12"
+          className="w-full sm:w-1/3 sm:h-auto mx-auto flex self-center transform rotate-12 mt-24 sm:-mt-0 md:-mt-96 lg:-mt-0 z-0 pr-12"
           alt=""
         />
         <div className="w-full mt-10 sm:mt-0 sm:w-1/2 flex flex-row sm:flex-col justify-center">

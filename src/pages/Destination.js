@@ -15,6 +15,16 @@ import sea2 from '../assets/sea/2.jpg';
 import sea3 from '../assets/brodovi/20200810_113107.JPG';
 import sea4 from '../assets/sea/3.jpg';
 import sea5 from '../assets/sea/4.jpg';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+import "swiper/swiper.min.css";
+import "swiper/components/effect-coverflow/effect-coverflow.min.css";
+import "swiper/components/navigation/navigation.min.css";
+//Images
+import slider1 from "../assets/busevi/AM_00777 copy.jpg";
+import vidslider2 from "../assets/other/dd.jpg";
+import aboutImg from "../assets/other/about-home.jpg";
 
 function Destinations() {
 
@@ -327,19 +337,19 @@ function Destinations() {
         </table>
     ]
 
-    if(seaPath.includes(path)){
+    if (seaPath.includes(path)) {
         Data = Sea;
     }
 
-    if(transPath.includes(path)){
+    if (transPath.includes(path)) {
         Data = Transfer;
-        if (path==="transfer"){
-            sendTable=table2Data;
+        if (path === "transfer") {
+            sendTable = table2Data;
         } else {
-            sendTable=tableData;
+            sendTable = tableData;
         }
     }
-
+    
     return (
         <div>
             {Data.filter(name => name.slug === `${path}`).map(filteredName => (
@@ -350,8 +360,8 @@ function Destinations() {
                     <section className="flex flex-col xl:flex-row mt-8 px-24 my-12">
                         <div className="w-full xl:w-2/3 flex flex-col justify-center">
                             <h2 className="text-ocean w-full text-3xl xl:text-xl font-light mb-4">
-                            <Table data={sendTable}/>
-                            {filteredName.description}
+                                <Table data={sendTable} />
+                                {filteredName.description}
                             </h2>
                             <Link to="/contact">
                                 <button onClick={localStorage.setItem('current', `${filteredName.name}`)} className="bg-ocean text-2xl xl:text-lg text-white px-4 w-full xl:w-full self-center mt-5 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
@@ -359,13 +369,46 @@ function Destinations() {
                                 </button>
                             </Link>
                         </div>
-                        <div className="w-full xl:w-1/3 mt-10 xl:mt-0">
+                        <div className="xl:ml-20 w-full xl:w-1/3 mt-10 xl:mt-0">
                             <div className="flex justify-center">
-                                <img
+                                <Swiper
+                                    autoplay={{ delay: 5000 }}
+                                    navigation={true}
+                                    effect={"coverflow"}
+                                    grabCursor={true}
+                                    centeredSlides={true}
+                                    slidesPerView={1}
+                                    coverflowEffect={{
+                                        rotate: 50,
+                                        stretch: 0,
+                                        depth: 100,
+                                        modifier: 1,
+                                        slideShadows: true,
+                                    }}
+                                    className="destinationSlider overflow-x-hidden z-30" id="destinationSlider"
+                                >
+                                    <SwiperSlide>
+                                    <img
                                     src={filteredName.isLand ? busevi[filteredName.id - 1] : brodovi[filteredName.id - 1]}
                                     alt=""
-                                    className="h-96 md:h-64 max-h-96 w-full sm:w-3/4"
+                                    className="h-96 md:h-64 max-h-96 w-full"
                                 />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                    <img
+                                    src={filteredName.isLand ? busevi[filteredName.id] : brodovi[filteredName.id]}
+                                    alt=""
+                                    className="h-96 md:h-64 max-h-96 w-full"
+                                />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                    <img
+                                    src={filteredName.isLand ? busevi[filteredName.id + 1] : brodovi[filteredName.id + 1]}
+                                    alt=""
+                                    className="h-96 md:h-64 max-h-96 w-full"
+                                />
+                                    </SwiperSlide>
+                                </Swiper>
                             </div>
                         </div>
                     </section>

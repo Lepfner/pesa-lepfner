@@ -58,3 +58,42 @@ tr, th {
   border-bottom-width: 1px;
   border-bottom-color: black;
 }
+#google_translate_element select{
+  color:black;
+  border: none;
+  border-radius:3px;
+  padding:6px 8px
+}
+.goog-logo-link{
+  display:none!important;
+}
+.goog-te-gadget{
+color:transparent!important;
+}
+
+.goog-te-banner-frame{
+display:none !important;
+}
+
+#goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+.goog-text-highlight { background: none !important; box-shadow: none !important;}
+.linkTranslate {
+  position: relative;
+}
+.linkTranslate:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+}
+.linkTranslate:hover:after {
+  width: 80%;
+  left: 0;
+  background: #fff;
+}
