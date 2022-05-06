@@ -10,21 +10,32 @@ import Table from '../Data/CjelodnevniTable';
 import bus1 from "../assets/busevi/AM_00777 copy.jpg";
 import bus2 from "../assets/busevi/AM_00826 copy.jpg";
 import bus3 from "../assets/busevi/AM_00858 copy.jpg";
-import sea1 from '../assets/sea/1.jpg';
-import sea2 from '../assets/sea/2.jpg';
-import sea3 from '../assets/brodovi/20200810_113107.JPG';
-import sea4 from '../assets/sea/3.jpg';
-import sea5 from '../assets/sea/4.jpg';
+import bus4 from "../assets/busevi/AM_00782 copy.jpg";
+import bus5 from "../assets/busevi/AM_00786 copy.jpg";
+import bus6 from "../assets/busevi/AM_00797 copy.jpg";
+import bus7 from "../assets/busevi/AM_00800 copy.jpg";
+import bus8 from "../assets/busevi/AM_00803 copy.jpg";
+import bus9 from "../assets/busevi/AM_00819 copy.jpg";
+import brac1 from '../assets/sea/brac1.jpg';
+import brac2 from '../assets/sea/brac2.jpg';
+import brac3 from '../assets/sea/brac3.jpg';
+import ms1 from '../assets/sea/ms1.jpg';
+import ms2 from '../assets/sea/ms2.jpeg';
+import ms3 from '../assets/sea/ms3.jpeg';
+import boat1 from '../assets/brodovi/20200810_113107.JPG';
+import boat2 from '../assets/brodovi/20200810_104859.JPG';
+import boat3 from '../assets/brodovi/20200724_130659.JPG';
+import hvar1 from '../assets/sea/hvar1.jpg';
+import hvar2 from '../assets/sea/hvar2.jpg';
+import hvar3 from '../assets/sea/hvar3.jpg';
+import solta1 from '../assets/sea/solta1.jpg';
+import solta2 from '../assets/sea/solta2.jpg';
+import solta3 from '../assets/sea/solta3.jpg';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
 import "swiper/swiper.min.css";
 import "swiper/components/effect-coverflow/effect-coverflow.min.css";
 import "swiper/components/navigation/navigation.min.css";
-//Images
-import slider1 from "../assets/busevi/AM_00777 copy.jpg";
-import vidslider2 from "../assets/other/dd.jpg";
-import aboutImg from "../assets/other/about-home.jpg";
 
 function Destinations() {
 
@@ -32,8 +43,8 @@ function Destinations() {
         document.getElementById("footer").style.backgroundColor = "#ddebe9";
     });
 
-    const busevi = [bus1, bus2, bus3];
-    const brodovi = [sea1, sea2, sea3, sea4, sea5];
+    var busevi = [];
+    var brodovi = [];
 
     const seaPath = ["brac", "spilja", "boat", "hvar", "solta"];
     const transPath = ["transfer", "rent", "excursion"];
@@ -349,6 +360,34 @@ function Destinations() {
             sendTable = tableData;
         }
     }
+
+    switch (path) {
+        case "brac":
+            brodovi = [brac1, brac2, brac3];
+            break;
+        case "spilja":
+            brodovi = [ms1, ms2, ms3];
+            break;
+        case "boat":
+            brodovi = [boat1, boat2, boat3];
+            break;
+        case "hvar":
+            brodovi = [hvar1, hvar2, hvar3];
+            break;
+        case "solta":
+            brodovi = [solta1, solta2, solta3];
+            break;
+        case "transfer":
+            busevi = [bus1, bus2, bus3];
+            break;
+        case "rent":
+            busevi = [bus4, bus5, bus6];
+            break;
+        case "excursion":
+            busevi = [bus7, bus8, bus9];
+            break;
+        default:
+    }
     
     return (
         <div>
@@ -364,7 +403,7 @@ function Destinations() {
                                 {filteredName.description}
                             </h2>
                             <Link to="/contact">
-                                <button onClick={localStorage.setItem('current', `${filteredName.name}`)} className="bg-ocean text-2xl xl:text-lg text-white px-4 w-full xl:w-full self-center mt-5 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                                <button onClick={localStorage.setItem('current', `${filteredName.name}`)} className="bg-ocean text-5xl xl:text-lg text-white h-32 xl:h-16 px-4 w-full xl:w-full self-center mt-5 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
                                     Rezervirajte!
                                 </button>
                             </Link>
@@ -389,21 +428,21 @@ function Destinations() {
                                 >
                                     <SwiperSlide>
                                     <img
-                                    src={filteredName.isLand ? busevi[filteredName.id - 1] : brodovi[filteredName.id - 1]}
+                                    src={filteredName.isLand ? busevi[filteredName.buffer - 1] : brodovi[filteredName.buffer - 1]}
                                     alt=""
                                     className="h-96 md:h-64 max-h-96 w-full"
                                 />
                                     </SwiperSlide>
                                     <SwiperSlide>
                                     <img
-                                    src={filteredName.isLand ? busevi[filteredName.id] : brodovi[filteredName.id]}
+                                    src={filteredName.isLand ? busevi[filteredName.buffer] : brodovi[filteredName.buffer]}
                                     alt=""
                                     className="h-96 md:h-64 max-h-96 w-full"
                                 />
                                     </SwiperSlide>
                                     <SwiperSlide>
                                     <img
-                                    src={filteredName.isLand ? busevi[filteredName.id + 1] : brodovi[filteredName.id + 1]}
+                                    src={filteredName.isLand ? busevi[filteredName.buffer + 1] : brodovi[filteredName.buffer + 1]}
                                     alt=""
                                     className="h-96 md:h-64 max-h-96 w-full"
                                 />

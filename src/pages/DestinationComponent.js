@@ -4,11 +4,11 @@ import React, { useEffect } from "react";
 import bus1 from "../assets/busevi/AM_00777 copy.jpg";
 import bus2 from "../assets/busevi/AM_00826 copy.jpg";
 import bus3 from "../assets/busevi/AM_00858 copy.jpg";
-import sea1 from '../assets/sea/1.jpg';
-import sea2 from '../assets/sea/2.jpg';
+import sea1 from '../assets/sea/brac1.jpg';
+import sea2 from '../assets/sea/ms1.jpg';
 import sea3 from '../assets/brodovi/20200810_113107.JPG';
-import sea4 from '../assets/sea/3.jpg';
-import sea5 from '../assets/sea/4.jpg';
+import sea4 from '../assets/sea/hvar1.jpg';
+import sea5 from '../assets/sea/solta1.jpg';
 //Ikona za destinacije
 import Icon from "./Icon";
 

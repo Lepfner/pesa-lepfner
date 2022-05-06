@@ -61,22 +61,22 @@ function Navbar() {
       <div id="overlay" className="h-full w-0 bg-lightblue fixed top-0 left-0 z-50">
         <ul id="menulist" className="flex-col hidden space-x-8 my-auto mt-96 text-black text-bold items-center">
           <li>
-            <Link to="/" onClick={closeOverlay}><p class="link m-8 text-5xl">HOME</p></Link>
+            <Link to="/" onClick={closeOverlay}><p class="link m-8 text-6xl">HOME</p></Link>
           </li>
           <li>
-            <Link to="/destinations" onClick={closeOverlay}><p class="link m-8 text-5xl">DESTINATIONS</p></Link>
+            <Link to="/destinations" onClick={closeOverlay}><p class="link m-8 text-6xl">DESTINATIONS</p></Link>
           </li>
           <li>
-            <Link to="/construction-list" onClick={closeOverlay}><p class="link m-8 text-5xl">CONSTRUCTIONS</p></Link>
+            <Link to="/construction-list" onClick={closeOverlay}><p class="link m-8 text-6xl">CONSTRUCTIONS</p></Link>
           </li>
           <li>
-            <Link to="/about"><p class="link m-8 text-5xl" onClick={closeOverlay}>ABOUT</p></Link>
+            <Link to="/about"><p class="link m-8 text-6xl" onClick={closeOverlay}>ABOUT</p></Link>
           </li>
           <li>
-            <Link to="/contact"><p class="link m-8 text-5xl" onClick={closeOverlay}>CONTACT</p></Link>
+            <Link to="/contact"><p class="link m-8 text-6xl" onClick={closeOverlay}>CONTACT</p></Link>
           </li>
           <li>
-            <Link to="/partners"><p class="link m-8 text-5xl" onClick={closeOverlay}>NAŠI PARTNERI</p></Link>
+            <Link to="/partners"><p class="link m-8 text-6xl" onClick={closeOverlay}>NAŠI PARTNERI</p></Link>
           </li>
         </ul>
         <button onClick={closeOverlay} className=""><FontAwesomeIcon icon={faTimes} id="close" size="3x" className="text-black hidden top-4 right-6" /></button>

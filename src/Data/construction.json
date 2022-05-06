@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "buffer": 1,
         "name": "Zemljani radovi",
         "slug": "zemljani",
         "type": "construction",
@@ -8,6 +9,7 @@
     },
     {
         "id": 2,
+        "buffer": 1,
         "name": "Visokogradnja",
         "slug": "visokogradnja",
         "type": "construction",

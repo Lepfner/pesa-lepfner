@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "buffer": 1,
         "name": "Transferi",
         "slug": "transfer",
         "type": "land",
@@ -9,6 +10,7 @@
     },
     {
         "id": 2,
+        "buffer": 1,
         "name": "Cjelodnevni najam vozila",
         "slug": "rent",
         "type": "land",
@@ -17,6 +19,7 @@
     },
     {
         "id": 3,
+        "buffer": 1,
         "name": "Izleti",
         "slug": "excursion",
         "type": "land",

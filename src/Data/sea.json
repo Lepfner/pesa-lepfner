@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "buffer": 1,
         "name": "Obilazak otoka Brača",
         "slug": "brac",
         "type": "sea",
@@ -9,6 +10,7 @@
     },
     {
         "id": 2,
+        "buffer": 1,
         "name": "Modra Špilja",
         "slug": "spilja",
         "type": "sea",
@@ -17,6 +19,7 @@
     },
     {
         "id": 3,
+        "buffer": 1,
         "name": "Cjelodnevni najam broda",
         "slug": "boat",
         "type": "sea",
@@ -25,6 +28,7 @@
     },
     {
         "id": 4,
+        "buffer": 1,
         "name": "Hvar & Pakleni otoci",
         "slug": "hvar",
         "type": "sea",
@@ -33,6 +37,7 @@
     },
     {
         "id": 5,
+        "buffer": 1,
         "name": "Kupanje na Šolti i Plava laguna",
         "slug": "solta",
         "type": "sea",

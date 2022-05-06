@@ -35,7 +35,7 @@ function Construction() {
                                 {parse(filteredName.description)}
                             </h2>
                             <Link to="/contact">
-                                <button onClick={localStorage.setItem('current', `${filteredName.name}`)} className="bg-ocean text-xl xl:text-lg text-white px-4 w-full xl:w-1/2 self-center mt-5 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
+                                <button onClick={localStorage.setItem('current', `${filteredName.name}`)} className="bg-ocean text-4xl h-28 xl:h-16 xl:text-lg text-white px-4 w-full xl:w-1/2 self-center mt-5 py-2 border border-ocean hover:text-ocean hover:bg-transparent transition duration-500">
                                     Rezervirajte!
                                 </button>
                             </Link>
