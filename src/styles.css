@@ -18,7 +18,8 @@
     left: 0;
     background: #fff;
   }
-  @media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px){
 html, body{
   width: 108vh;
 }
@@ -26,7 +27,23 @@ html, body{
   width: 108vh;
 }
 }
-#google_translate_element span{display: none;}
+@media only screen and (min-height: 869px) and (max-height: 920px){
+  html, body{
+    width: 46vh;
+  }
+  #navbar{
+    width: 46vh;
+  }
+  }
+
+@media only screen and (max-height: 768px){
+  html, body{
+    width: 126vh;
+  }
+  #navbar{
+    width: 126vh;
+  }
+}
 @media only screen and (max-height: 768px){
   html, body{
     width: 126vh;
@@ -51,12 +68,77 @@ html, body{
   #navbar{
     width: 129.5vh;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+  html, body{
+    width: 216.3vh;
   }
+  #navbar{
+    width: 216.3vh;
+    height: 130px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  html, body{
+    width: 205.5vh;
+  }
+  #navbar{
+    width: 205.5vh;
+  }
+}
+@media only screen and (min-width: 600px) and (max-height: 300px){
+  html, body{
+    width: 233.2vh;
+  }
+  #navbar{
+    width: 233.2vh;
+  }
+}
+@media only screen and (min-width: 600px) and (max-height: 415px){
+  html, body{
+    width: 221.8vh;
+  }
+  #navbar{
+    width: 221.8vh;
+  }
+}
+@media only screen and (min-width: 1020px) and (max-height: 602px){
+  html, body{
+    width: 186.6vh;
+  }
+  #navbar{
+    width: 186.6vh;
+  }
+}
+@media only screen and (min-width: 650px) and (max-height: 300px){
+  html, body{
+    width: 233.2vh;
+  }
+  #navbar{
+    width: 233.2vh;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 415px){
+  @media only screen and (min-height: 900px) and (max-height: 915px){
+  html, body{
+    width: 45vh;
+  }
+  #navbar{
+    width: 45vh;
+  }
+}}
+
+
+
 tr, th {
   padding: 10px;
   border-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: black;
+}
+
+#google_translate_element span{
+  display: none;
 }
 #google_translate_element select{
   color:black;
@@ -71,12 +153,20 @@ tr, th {
 color:transparent!important;
 }
 
-.goog-te-banner-frame{
-display:none !important;
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+  } 
+body {
+  top: 0px !important; 
+  }
+#goog-gt-tt, .goog-te-balloon-frame{
+  display: none !important;
+}
+.goog-text-highlight { 
+  background: none !important; box-shadow: none !important;
 }
 
-#goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
-.goog-text-highlight { background: none !important; box-shadow: none !important;}
+
 .linkTranslate {
   position: relative;
 }
